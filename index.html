@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./index.css" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js" defer></script>
     <title>Ecommerce Landing Page</title>
   </head>
 
@@ -106,67 +109,106 @@
         <img src="images/amazon.png" alt="" srcset="" />
       </div>
     </section>
-    <section
-      class="flex flex-col container items-start gap-28 mx-auto px-[10px]"
-    >
-      <div class="relative text-black">
-        <h2
-          class="text-4xl font-black after:content-oval after:absolute after:left-[50%] after:-bottom-2.5 after:-z-10 md:text-5xl"
-        >
-          NEW ARRIVALS
-        </h2>
-      </div>
-      <div
-        class="grid grid-flow-row grid-row-1 gap-24 md:grid-flow-col md:grid-cols-3"
-      >
-        <div class="flex flex-col w-full gap-7">
-          <img
-            class="w-full h-[704px] object-cover object-[75%] rounded-[20px]"
-            src="./images/hoddiee.png"
-          />
-          <div class="flex flex-row justify-between items-center">
-            <div class="flex flex-col">
-              <h3 class="text-[32px] text-black font-medium">
-                Hoodies & Sweetshirt
-              </h3>
-              <a class="text-2xl text-[#7F7F7F]" href="#">Explore Now!</a>
-            </div>
-            <div>
-              <img src="./images/arrow.png" alt="" srcset="" />
-            </div>
-          </div>
+    <section class="container mx-auto px-[10px] my-28">
+        <div class="relative text-black">
+            <h2 class="text-4xl font-black md:text-5xl z-20">
+                NEW ARRIVALS</h2>
+            <img class="mark" src="./images/banner-image-2.png" alt="img"/>    
         </div>
+        
+        <div class="swiper mySwiper mt-10">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide flex flex-col w-full gap-7">
+                    <img class="w-full h-[704px] object-cover object-[75%] rounded-[20px]" src="./images/hoddiee.png" alt="img" />
+                    <div class="flex flex-row justify-between items-center">
+                        <div class="flex flex-col">
+                            <h3 class="text-[32px] text-black font-medium">Hoodies & Sweatshirt</h3>
+                            <a class="text-2xl text-[#7F7F7F]" href="#">Explore Now!</a>
+                        </div>
+                        <div>
+                            <img src="./images/arrow.png" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Slide 2 -->
+                <div class="swiper-slide flex flex-col w-full gap-7">
+                    <img class="w-full h-[704px] object-cover object-[34%] rounded-[20px]" src="./images/coats.png" alt="img" />
+                    <div class="flex flex-row justify-between items-center">
+                        <div class="flex flex-col">
+                            <h3 class="text-[32px] text-black font-medium">Coats & Parkas</h3>
+                            <a class="text-2xl text-[#7F7F7F]" href="#">Explore Now!</a>
+                        </div>
+                        <div>
+                            <img src="./images/arrow.png" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Slide 3 -->
+                <div class="swiper-slide flex flex-col w-full gap-7">
+                    <img class="w-full h-[704px] object-cover object-[47%] rounded-[20px]" src="./images/T-shirts.png" alt="img" />
+                    <div class="flex flex-row justify-between items-center">
+                        <div class="flex flex-col">
+                            <h3 class="text-[32px] text-black font-medium">Tees & T-Shirt</h3>
+                            <a class="text-2xl text-[#7F7F7F]" href="#">Explore Now!</a>
+                        </div>
+                        <div>
+                            <img src="./images/arrow.png" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
 
-        <div class="flex flex-col w-full gap-7">
-          <img
-            class="w-full h-[704px] object-cover object-[34%] rounded-[20px]"
-            src="./images/coats.png"
-          />
-          <div class="flex flex-row justify-between items-center">
-            <div class="flex flex-col">
-              <h3 class="text-[32px] text-black font-medium">Coats & Parkas</h3>
-              <a class="text-2xl text-[#7F7F7F]" href="#">Explore Now!</a>
-            </div>
-            <div>
-              <img src="./images/arrow.png" alt="" srcset="" />
-            </div>
-          </div>
-        </div>
+                <!--Slide 4-->
+                <div class="swiper-slide flex flex-col w-full gap-7">
+                    <img class="w-full h-[704px] object-cover object-[34%] rounded-[20px]" src="./images/fav-1.png" alt="img" />
+                    <div class="flex flex-row justify-between items-center">
+                        <div class="flex flex-col">
+                            <h3 class="text-[32px] text-black font-medium">Coats & Parkas</h3>
+                            <a class="text-2xl text-[#7F7F7F]" href="#">Explore Now!</a>
+                        </div>
+                        <div>
+                            <img src="./images/arrow.png" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
 
-        <div class="flex flex-col w-full gap-7">
-          <img
-            class="w-full h-[704px] object-cover object-[47%] rounded-[20px]"
-            src="./images/T-shirts.png"
-          />
-          <div class="flex flex-row justify-between items-center">
-            <div class="flex flex-col">
-              <h3 class="text-[32px] text-black font-medium">Tees & T-Shirt</h3>
-              <a class="text-2xl text-[#7F7F7F]" href="#">Explore Now!</a>
+                <!--Slide 5-->
+                <div class="swiper-slide flex flex-col w-full gap-7">
+                    <img class="w-full h-[704px] object-cover object-[34%] rounded-[20px]" src="./images/coats.png" alt="img" />
+                    <div class="flex flex-row justify-between items-center">
+                        <div class="flex flex-col">
+                            <h3 class="text-[32px] text-black font-medium">Coats & Parkas</h3>
+                            <a class="text-2xl text-[#7F7F7F]" href="#">Explore Now!</a>
+                        </div>
+                        <div>
+                            <img src="./images/arrow.png" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+
+                <!--Slide 6-->
+                <div class="swiper-slide flex flex-col w-full gap-7">
+                    <img class="w-full h-[704px] object-cover object-[34%] rounded-[20px]" src="./images/fav-2.png" alt="img" />
+                    <div class="flex flex-row justify-between items-center">
+                        <div class="flex flex-col">
+                            <h3 class="text-[32px] text-black font-medium">Coats & Parkas</h3>
+                            <a class="text-2xl text-[#7F7F7F]" href="#">Explore Now!</a>
+                        </div>
+                        <div>
+                            <img src="./images/arrow.png" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
             </div>
+    
+            <!-- Pagination and Navigation -->
             <div>
-              <img src="./images/arrow.png" alt="" srcset="" />
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
             </div>
-          </div>
         </div>
       </div>
     </section>

@@ -1,3 +1,4 @@
+
 const hamburger = document.getElementById("hamburger");
 const mobileMenu = document.getElementById("mobile-nav");
 
@@ -69,11 +70,37 @@ class Mode {
 }
 
 const modeChanger_1 = document.getElementById("darkModeToggle"),
-  modeChanger_2 = document.getElementById("modeSwitch");
+modeChanger_2 = document.getElementById("modeSwitch");
 
 modeChanger_1.addEventListener("click", Mode.change);
 modeChanger_2.addEventListener("click", Mode.change);
 
+    document.addEventListener('DOMContentLoaded', function () {
+        new Swiper('.mySwiper', {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 20,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+            autoplay: {
+              delay: 3000,
+            },
+        });
+    });
 // Detect scroll to show/hide button
 window.onscroll = function () {
   let btn = document.getElementById("scrollToTopBtn");

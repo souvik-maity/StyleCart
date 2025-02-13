@@ -37,3 +37,14 @@
     transform: translateY(0);
     opacity: 1;
 }
+
+.swiper{
+    margin-top: 6rem;
+}
+
+.mark{
+    position: absolute;
+    bottom: 0%;
+    left: 12%;
+    z-index: -20;
+}
