@@ -405,6 +405,53 @@ button,
   cursor: pointer;
 }
 
+/* Scroll to Top Button */
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+/* Show Button when Scrolled Down */
+#scrollToTopBtn.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Hover Effects */
+#scrollToTopBtn:hover {
+  transform: scale(1.2) rotate(15deg);
+  box-shadow: 0 0 15px rgba(255, 65, 108, 0.8);
+}
+
+/* Floating Animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0px); }
+}
+
+#scrollToTopBtn.float {
+  animation: float 1.5s infinite ease-in-out;
+}
+
 /*
 Make sure disabled buttons don't get the pointer cursor.
 */
@@ -897,7 +944,7 @@ body {
 }
 
 .bg-\[\#\#1c1e21\] {
-  background-color: ##1c1e21;
+  background-color: #1c1e21;
 }
 
 .bg-\[\#1c1e21\] {
@@ -1117,7 +1164,7 @@ body {
 }
 
 .text-\[\#ff\] {
-  color: #ff;
+  color: #fff;
 }
 
 .text-\[\#ff0\] {
