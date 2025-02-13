@@ -1,0 +1,39 @@
+.toggle {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease-in-out;
+}
+
+.icon {
+    position: absolute;
+    font-size: 1.5rem;
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+.sun {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.moon {
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.dark-mode .sun {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.dark-mode .moon {
+    transform: translateY(0);
+    opacity: 1;
+}

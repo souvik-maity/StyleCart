@@ -5,21 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./index.css">
     <title>Ecommerce Landing Page</title>
 </head>
 
-<body>
-    <nav class="bg-primary text-black w-full uppercase tracking-[0.22px] md:text-[22px] h-3 py-2">
+
+<body class="light-mode bg-slate-50">
+    <nav class="bg-transparent text-black w-full uppercase tracking-[0.22px] md:text-[22px] h-3 py-2">
         <div class="container mx-auto flex flex-row justify-between items-center">
             <div>
-                <img src="./images/logo-black.png" alt="Shop Logo" srcset="">
+                <img id="shopLogo" src="./images/logo-black.png" alt="Shop Logo" srcset="">
             </div>
-            <ul class="hidden md:flex flex-row gap-16 justify-end items-center">
+            <ul class="text-black hidden md:flex flex-row gap-16 justify-end items-center">
                 <li><a href="#">Catalogue</a></li>
                 <li><a href="#">Fashion</a></li>
                 <li><a href="#">Favourite</a></li>
                 <li><a href="#">Lifestyle</a></li>
-                <li class=""><a class="bg-black text-white rounded-md py-4 px-4" href="#">Sign up</a></li>
+                <li>
+                    <button type="button" id="darkModeToggle" class="toggle">
+                        <span class="icon sun">☀️</span>
+                        <span class="icon moon">🌙</span>
+                    </button>
+                </li>
+                <li class=""><a class="bg-black text-[#FFFFF0] rounded-md py-4 px-4" href="#">Sign up</a></li>
             </ul>
             <div class="md:hidden">
                 <div class="space-y-1 rotate-180" id="hamburger">
@@ -27,29 +35,40 @@
                     <div class="w-6 h-0.5 transition-all bg-black"></div>
                     <div class="w-6 h-0.5 transition-all bg-black"></div>
                 </div>
-                <ul class="flex flex-col justify-start gap-5 h-screen absolute top-0 left-0 bg-primary p-10 items-start -translate-x-full transition-all z-40"
+                <ul class="text-white flex flex-col justify-start gap-5 h-screen absolute top-0 left-0 bg-primary p-10 items-start -translate-x-full transition-all z-40"
                     id="mobile-nav">
                     <li><a href="#">Catalogue</a></li>
                     <li><a href="#">Fashion</a></li>
                     <li><a href="#">Favourite</a></li>
                     <li><a href="#">Lifestyle</a></li>
-                    <li class="mt-4 -ml-1"><a class="bg-black text-white rounded-md py-2 px-3" href="#">Sign up</a></li>
+                    <li>
+                        <button type="button" id="modeSwitch" class="mode-changer">
+                            Dark Mode
+                        </button>
+                    </li>
+                    <li class="mt-4 -ml-1"><a class="bg-black text-[#FFFFF0] rounded-md py-2 px-3" href="#">Sign up</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
+
     <section
         class="flex flex-col container mx-auto bg-[#F4F6F5] rounded-[59px] pt-32 px-10 md:items-center my-16 md:px-20 md:pt-[68px] md:flex-row md:justify-between gap-10 z-30">
         <div class="flex flex-col items-start text-black md:pb-[68px] z-10  ">
-            <h1 class="text-4xl font-black  leading-[125%]   sm:text-5xl md:text-[96px] md:leading-[125%]  "><span class="relative after:w-[120%] after:h-full after:bg-white after:block after:absolute after:-z-10 after:top-0 after:-rotate-2">LET’S</span> <br /> EXPLORE <br />
-                <span class="relative after:w-[120%] after:h-full after:bg-primary after:block after:absolute after:-z-10 after:top-0 after:-rotate-2">UNIQUE</span> <br /> CLOTHES.
+            <h1 class="text-4xl font-black  leading-[125%]   sm:text-5xl md:text-[96px] md:leading-[125%]  "><span
+                    class="relative after:w-[120%] after:h-full after:bg-white after:block after:absolute after:-z-10 after:top-0 after:-rotate-2">LET’S</span>
+                <br /> EXPLORE <br />
+                <span
+                    class="relative after:w-[120%] after:h-full after:bg-primary after:block after:absolute after:-z-10 after:top-0 after:-rotate-2">UNIQUE</span>
+                <br /> CLOTHES.
             </h1>
             <p class="md:text-[32px]">Live for Influential and Innovative fashion!</p>
             <div class="flex flex-col md:flex-row md:items-center justify-evenly gap-9 pt-8">
                 <div class="w-1/2 h-1/2">
                     <img class="" src="./images/banner-image-2.png" alt="banner image" srcset="">
                 </div>
-                <a class="bg-black text-white rounded-md py-4 px-4 text-center" href="#">Shop Now</a>
+                <a class="bg-black text-[#FFFFF0] rounded-md py-4 px-4 text-center" href="#">Shop Now</a>
             </div>
         </div>
         <div class="">
@@ -71,12 +90,12 @@
                 NEW ARRIVALS</h2>
         </div>
         <div class="grid grid-flow-row grid-row-1 gap-24 md:grid-flow-col md:grid-cols-3 ">
-           
+
             <div class="flex flex-col w-full gap-7">
                 <img class="w-full h-[704px] object-cover object-[75%] rounded-[20px] " src="./images/hoddiee.png" />
                 <div class="flex flex-row justify-between items-center">
                     <div class="flex flex-col">
-                        <h3 class="text-[32px] font-medium">Hoodies & Sweetshirt</h3>
+                        <h3 class="text-[32px] text-black font-medium">Hoodies & Sweetshirt</h3>
                         <a class="text-2xl text-[#7F7F7F]" href="#">Explore Now!</a>
                     </div>
                     <div>
@@ -84,12 +103,12 @@
                     </div>
                 </div>
             </div>
-           
+
             <div class="flex flex-col w-full gap-7">
                 <img class="w-full h-[704px] object-cover object-[34%] rounded-[20px] " src="./images/coats.png" />
                 <div class="flex flex-row justify-between items-center">
                     <div class="flex flex-col">
-                        <h3 class="text-[32px] font-medium">Coats & Parkas</h3>
+                        <h3 class="text-[32px] text-black font-medium">Coats & Parkas</h3>
                         <a class="text-2xl text-[#7F7F7F]" href="#">Explore Now!</a>
                     </div>
                     <div>
@@ -97,12 +116,12 @@
                     </div>
                 </div>
             </div>
-           
+
             <div class="flex flex-col w-full gap-7">
                 <img class="w-full h-[704px] object-cover object-[47%] rounded-[20px] " src="./images/T-shirts.png" />
                 <div class="flex flex-row justify-between items-center">
                     <div class="flex flex-col">
-                        <h3 class="text-[32px] font-medium">Tees & T-Shirt</h3>
+                        <h3 class="text-[32px] text-black font-medium">Tees & T-Shirt</h3>
                         <a class="text-2xl text-[#7F7F7F]" href="#">Explore Now!</a>
                     </div>
                     <div>
@@ -112,7 +131,7 @@
             </div>
         </div>
     </section>
-    
+
     <section class="flex flex-col container items-start my-[190px] gap-28 mx-auto">
         <div class="relative text-black">
             <h2
@@ -120,14 +139,14 @@
                 Young’s Favourite</h2>
         </div>
         <div class="grid grid-flow-row grid-row-1 gap-12 md:grid-flow-col md:grid-cols-2 ">
-            
+
             <div class="flex flex-col gap-7">
                 <div class="">
                     <img class="w-full h-[704px] object-cover object-[25%] rounded-[20px] " src="./images/fav-1.png" />
                 </div>
                 <div class="flex flex-row justify-between items-center">
                     <div class="flex flex-col">
-                        <h3 class="text-[32px] font-medium">Trending on instagram</h3>
+                        <h3 class="text-[32px] text-black font-medium">Trending on instagram</h3>
                         <a class="text-2xl text-[#7F7F7F]" href="#">Explore Now!</a>
                     </div>
                     <div>
@@ -135,14 +154,14 @@
                     </div>
                 </div>
             </div>
-          
+
             <div class="flex flex-col gap-7">
                 <div class="h-[704px]">
                     <img class="w-full h-[704px] object-cover object-[34%] rounded-[20px] " src="./images/fav-2.png" />
                 </div>
                 <div class="flex flex-row justify-between items-center">
                     <div class="flex flex-col">
-                        <h3 class="text-[32px] font-medium">All Under $40</h3>
+                        <h3 class="text-[32px] text-black font-medium">All Under $40</h3>
                         <a class="text-2xl text-[#7F7F7F]" href="#">Explore Now!</a>
                     </div>
                     <div>
@@ -154,7 +173,9 @@
     </section>
     <section class="container mx-auto flex flex-col my-[190px] gap-28 md:flex-row md:justify-evenly md:items-center ">
         <div class="flex-1 flex flex-col items-center text-center md:items-start">
-            <h4 class="text-4xl md:text-5xl font-black tracking-[3px] leading-[130%] md:leading-[150%] mb-10">DOWNLOAD
+            <h4
+                class="text-4xl md:text-5xl font-black text-black tracking-[3px] leading-[130%] md:leading-[150%] mb-10">
+                DOWNLOAD
                 APP & <br /> GET THE VOUCHER!</h4>
             <p class="text-2xl font-medium leading-9 text-[#7C7C7C]">Get 30% off for first transaction using <br />
                 Rondovision mobile app for now.</p>
@@ -177,7 +198,7 @@
                 <input class="px-4 py-5 rounded-[10px] focus-visible:outline-0 md:py-6 md:px-7 " type="email"
                     name="email" placeholder="type your email here">
                 <button
-                    class="py-2 px-4 bg-black text-white uppercase md:text-[33px] md:py-[5px] md:px-[20px] rounded-lg mr-2"
+                    class="py-2 px-4 bg-black text-[#FFFFF0] uppercase md:text-[33px] md:py-[5px] md:px-[20px] rounded-lg mr-2"
                     type="submit">send</button>
             </div>
         </form>
@@ -230,16 +251,7 @@
             </div>
         </div>
     </footer>
-    <script async>
-
-        const hamburger = document.getElementById('hamburger');
-        const mobileMenu = document.getElementById("mobile-nav");
-
-        hamburger.addEventListener('click', () => {
-            mobileMenu.classList.toggle("-translate-x-full");
-        })
-
-    </script>
+    <script src="index.js"></script>
 </body>
 
 </html>
