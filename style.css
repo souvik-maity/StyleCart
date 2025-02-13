@@ -1404,3 +1404,18 @@ body {
     line-height: 70px;
   }
 }
+/* Custom scrollbar styling with animation */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(255 255 255);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(230 199 68);
+  border-radius: 10px;
+  transition: background 0.3s ease-in-out;
+}
