@@ -11,106 +11,74 @@
     <title>Ecommerce Landing Page</title>
   </head>
 
-  <body class="light-mode bg-slate-50">
-    <nav
-      class="bg-transparent text-black w-full uppercase tracking-[0.22px] md:text-[22px] p-11"
-    >
-      <div class="container mx-auto flex flex-row justify-between items-center">
-        <div>
-          <img
-            id="shopLogo"
-            src="./images/logo-black.png"
-            alt="Shop Logo"
-            srcset=""
-          />
-        </div>
-        <ul
-          class="text-black hidden md:flex flex-row gap-16 justify-end items-center"
-        >
-          <li><a href="#">Catalogue</a></li>
-          <li><a href="#">Fashion</a></li>
-          <li><a href="#">Favourite</a></li>
-          <li><a href="#">Lifestyle</a></li>
-          <li>
-            <button type="button" id="darkModeToggle" class="toggle">
-              <span class="icon sun">☀️</span>
-              <span class="icon moon">🌙</span>
-            </button>
-          </li>
-          <li class="">
-            <a class="bg-black text-[#FFFFF0] rounded-md py-4 px-4" href="#"
-              >Sign up</a
-            >
-          </li>
-        </ul>
-        <div class="md:hidden">
-          <div class="space-y-1 rotate-180" id="hamburger">
-            <div class="w-6 h-0.5 transition-all bg-black"></div>
-            <div class="w-6 h-0.5 transition-all bg-black"></div>
-            <div class="w-6 h-0.5 transition-all bg-black"></div>
-          </div>
-          <ul
-            class="text-white flex flex-col justify-start gap-5 h-screen absolute top-0 left-0 bg-primary p-10 items-start -translate-x-full transition-all z-40"
-            id="mobile-nav"
-          >
-            <li><a href="#">Catalogue</a></li>
-            <li><a href="#">Fashion</a></li>
-            <li><a href="#">Favourite</a></li>
-            <li><a href="#">Lifestyle</a></li>
-            <li>
-              <button type="button" id="modeSwitch" class="mode-changer">
-                Dark Mode
-              </button>
-            </li>
-            <li class="mt-4 -ml-1">
-              <a class="bg-black text-[#FFFFF0] rounded-md py-2 px-3" href="#"
-                >Sign up</a
-              >
-            </li>
-          </ul>
+
+
+<body class="light-mode bg-slate-50">
+    <nav class="bg-transparent text-black w-full uppercase tracking-[0.22px] md:text-[22px] h-3 py-2">
+        <div class="container mx-auto flex flex-row justify-between items-center">
+            <div>
+                <img id="shopLogo" src="./images/logo-black.png" alt="Shop Logo" srcset="">
+            </div>
+            <ul class="text-black hidden md:flex flex-row gap-16 justify-end items-center">
+                <li><a href="#">Catalogue</a></li>
+                <li><a href="#">Fashion</a></li>
+                <li><a href="#">Favourite</a></li>
+                <li><a href="#">Lifestyle</a></li>
+                <li>
+                    <button type="button" id="darkModeToggle" class="toggle">
+                        <span class="icon sun">☀️</span>
+                        <span class="icon moon">🌙</span>
+                    </button>
+                </li>
+                <li class=""><a class="bg-black text-[#FFFFF0] rounded-md py-4 px-4" href="#">Sign up</a></li>
+            </ul>
+            <div class="md:hidden">
+                <div class="space-y-1 rotate-180" id="hamburger">
+                    <div class="w-6 h-0.5 transition-all bg-black"></div>
+                    <div class="w-6 h-0.5 transition-all bg-black"></div>
+                    <div class="w-6 h-0.5 transition-all bg-black"></div>
+                </div>
+                <ul class="text-white flex flex-col justify-start gap-5 h-screen absolute top-0 left-0 bg-primary p-10 items-start -translate-x-full transition-all z-40"
+                    id="mobile-nav">
+                    <li><a href="#">Catalogue</a></li>
+                    <li><a href="#">Fashion</a></li>
+                    <li><a href="#">Favourite</a></li>
+                    <li><a href="#">Lifestyle</a></li>
+                    <li>
+                        <button type="button" id="modeSwitch" class="mode-changer">
+                            Dark Mode
+                        </button>
+                    </li>
+                    <li class="mt-4 -ml-1"><a class="bg-black text-[#FFFFF0] rounded-md py-2 px-3" href="#">Sign up</a>
+                    </li>
+                </ul>
+            </div>
+
+
         </div>
       </div>
     </nav>
 
-    <section
-      class="flex flex-col container mx-auto bg-[#F4F6F5] rounded-[59px] pt-16 px-10 md:items-center md:px-20 md:pt-[68px] md:flex-row md:justify-between gap-10 z-30"
-    >
-      <div class="flex flex-col items-start text-black md:pb-[68px] z-10">
-        <h1
-          class="text-4xl font-black leading-[125%] sm:text-5xl md:text-[96px] md:leading-[125%]"
-        >
-          <span
-            class="relative after:w-[120%] after:h-full after:bg-white after:block after:absolute after:-z-10 after:top-0 after:-rotate-2"
-            >LET’S</span
-          >
-          <br />
-          EXPLORE <br />
-          <span
-            class="relative after:w-[120%] after:h-full after:bg-primary after:block after:absolute after:-z-10 after:top-0 after:-rotate-2"
-            >UNIQUE</span
-          >
-          <br />
-          CLOTHES.
-        </h1>
-        <p class="md:text-[32px]">
-          Live for Influential and Innovative fashion!
-        </p>
-        <div
-          class="flex flex-col md:flex-row md:items-center justify-evenly gap-9 pt-8"
-        >
-          <div class="w-1/2 h-1/2">
-            <img
-              class=""
-              src="./images/banner-image-2.png"
-              alt="banner image"
-              srcset=""
-            />
-          </div>
-          <a
-            class="bg-black text-[#FFFFF0] rounded-md py-4 px-4 text-center"
-            href="#"
-            >Shop Now</a
-          >
+    <section class="flex flex-col container mx-auto bg-[#F4F6F5] rounded-[59px] pt-32 px-10 md:items-center my-16 md:px-20 md:pt-[68px] md:flex-row md:justify-between gap-10 z-30">
+        <div class="flex flex-col items-start text-black md:pb-[68px] z-10  ">
+            <h1 class="text-4xl font-black  leading-[125%]   sm:text-5xl md:text-[96px] md:leading-[125%]  "><span
+                    class="relative after:w-[120%] after:h-full after:bg-white after:block after:absolute after:-z-10 after:top-0 after:-rotate-2">LET’S</span>
+                <br /> EXPLORE <br />
+                <span
+                    class="relative after:w-[120%] after:h-full after:bg-primary after:block after:absolute after:-z-10 after:top-0 after:-rotate-2">UNIQUE</span>
+                <br /> CLOTHES.
+            </h1>
+            <p class="md:text-[32px]">Live for Influential and Innovative fashion!</p>
+            <div class="flex flex-col md:flex-row md:items-center justify-evenly gap-9 pt-8">
+                <div class="w-1/2 h-1/2">
+                    <img class="" src="./images/banner-image-2.png" alt="banner image" srcset="">
+                </div>
+                <a class="bg-black text-[#FFFFF0] rounded-md py-4 px-4 text-center" href="#">Shop Now</a>
+            </div>
+        </div>
+        <div class="">
+            <img class="w-full" src="./images/banner-image.png" alt="banner image" />
+
         </div>
       </div>
       <div class="">

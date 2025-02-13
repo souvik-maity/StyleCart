@@ -731,6 +731,12 @@ body {
   height: 50%;
 }
 
+.h-3{
+  height: 5rem;
+}
+
+.h-screen{
+  height: 100vh;
 .h-\[704px\] {
   height: 704px;
 }
@@ -1027,6 +1033,10 @@ body {
 .py-\[125px\] {
   padding-top: 125px;
   padding-bottom: 125px;
+}
+
+.pt-32{
+  padding-top: 8rem;
 }
 
 .py-\[61px\] {
@@ -1403,4 +1413,20 @@ body {
   .md\:leading-\[70px\] {
     line-height: 70px;
   }
+}
+
+/* Custom scrollbar styling with animation */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(255 255 255);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(230 199 68);
+  border-radius: 10px;
+  transition: background 0.3s ease-in-out;
 }
