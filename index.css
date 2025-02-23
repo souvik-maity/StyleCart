@@ -42,6 +42,10 @@
     margin-top: 6rem;
 }
 
+.swiper-pagination {
+    display: none !important;
+}
+
 .mark{
     position: absolute;
     bottom: 0%;
