@@ -84,10 +84,7 @@ modeChanger_2.addEventListener("click", Mode.change);
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
+            pagination: false,
             breakpoints: {
                 768: {
                     slidesPerView: 2,
