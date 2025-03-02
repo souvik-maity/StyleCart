@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:styles": "npx tailwindcss -i ./src/css/input.css -o .src/css/tailwind.css --watch",
+    "build:styles": "npx tailwindcss -i ./src/css/input.css -o ./src/css/tailwind.css --watch",
     "start": "serve -s ."
   },
   "keywords": [],
