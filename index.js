@@ -29,6 +29,14 @@ class Mode {
       from: 'border-gray-300',
       to: 'border-gray-700',
     },
+    {
+      from: 'text-gray-900',
+      to: 'text-white',
+    },
+    {
+      from: 'bg-white',
+      to: 'bg-[#1c1e21]',
+    },
   ];
 
   static change = function () {
@@ -75,7 +83,6 @@ class Mode {
       Mode.#value = 'light';
     }
 
-    console.log('Mode Changed.');
   };
 }
 
@@ -108,14 +115,15 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   });
 });
+
 // Detect scroll to show/hide button
 window.onscroll = function () {
   let btn = document.getElementById('scrollToTopBtn');
 
   if (document.documentElement.scrollTop > 100) {
-    btn.classList.add('show', 'float'); // Show button & Floating animation
+    btn.classList.add('show', 'float'); 
   } else {
-    btn.classList.remove('show', 'float'); // Hide when at the top
+    btn.classList.remove('show', 'float'); 
   }
 };
 
