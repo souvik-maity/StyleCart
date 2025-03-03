@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/index.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Me</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body class="light-mode bg-slate-50">
+  <nav class="bg-transparent text-black w-full uppercase tracking-[0.22px] md:text-[22px] p-11">
+    <div class="container mx-auto flex flex-row justify-between items-center">
+      <div>
+        <img id="shopLogo" src="./../assets/images/logo-black.png" alt="Shop Logo" srcset="" />
+      </div>
+      <ul class="text-black hidden md:flex flex-row gap-16 justify-end items-center">
+        <li><a href="#">Catalogue</a></li>
+        <li><a href="#">Fashion</a></li>
+        <li><a href="#">Favourite</a></li>
+        <li><a href="#">Lifestyle</a></li>
+        <li>
+          <button type="button" id="darkModeToggle" class="toggle">
+            <span class="icon sun">☀️</span>
+            <span class="icon moon">🌙</span>
+          </button>
+        </li>
+        <li class="">
+          <a class="bg-black text-[#FFFFF0] rounded-md py-4 px-4" href="#">Sign up</a>
+        </li>
+      </ul>
+      <div class="md:hidden">
+        <div class="space-y-1 rotate-180" id="hamburger">
+          <div class="w-6 h-0.5 transition-all bg-black"></div>
+          <div class="w-6 h-0.5 transition-all bg-black"></div>
+          <div class="w-6 h-0.5 transition-all bg-black"></div>
+        </div>
+        <ul
+          class="text-white flex flex-col justify-start gap-5 h-screen absolute top-0 left-0 bg-primary p-10 items-start -translate-x-full transition-all z-40"
+          id="mobile-nav">
+          <li><a href="#">Catalogue</a></li>
+          <li><a href="#">Fashion</a></li>
+          <li><a href="#">Favourite</a></li>
+          <li><a href="#">Lifestyle</a></li>
+          <li>
+            <button type="button" id="modeSwitch" class="mode-changer">
+              Dark Mode
+            </button>
+          </li>
+          <li class="mt-4 -ml-1">
+            <a class="bg-black text-[#FFFFF0] rounded-md py-2 px-3" href="#">Sign up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="flex items-center justify-center min-h-screen bg-[#F4F6F5] text-black">
+    <div class="w-full max-w-md p-6 bg-[#F4F6F5] rounded-2xl shadow-lg border border-gray-300">
+      <h2 class="text-2xl font-semibold text-center mb-6">Contact Me</h2>
+      <form id="contact-form" ">
+          <div class=" mb-6">
+        <label class="block text-sm font-medium mb-2">Username</label>
+        <input name="username" type="text"
+          class="w-full p-3 rounded-lg bg-[#F4F6F5] border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          placeholder="Enter your username" required />
+    </div>
+
+    <div class="mb-6">
+      <label class="block text-sm font-medium mb-2">Description</label>
+      <textarea name="description"
+        class="w-full p-3 rounded-lg bg-[#F4F6F5] border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        placeholder="Write your message here" rows="4" required></textarea>
+    </div>
+
+    <div class="mb-6">
+      <label class="block text-sm font-medium mb-2">Email ID</label>
+      <input name="email" type="email"
+        class="w-full p-3 rounded-lg bg-[#F4F6F5] border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        placeholder="Enter your email" required />
+    </div>
+
+    <button type="submit"
+      class="w-full p-3 rounded-lg bg-blue-600 hover:bg-blue-700 transition text-yellow-50 font-bold">
+      Submit
+    </button>
+    </form>
+  </div>
+  </div>
+  <footer
+    class="bg-black py-[125px] text-white flex flex-col gap-24 px-14 md:items-center md:gap-[415px] md:flex-row md:justify-between md:px-[100px]">
+    <div class="flex flex-col items-start gap-8">
+      <div>
+        <img src="./../assets/images/FASHION.png" />
+      </div>
+      <div>
+        <p class="text-xl text-[#8E8E8E] md:text-2xl font-normal">
+          Complete your style with awesome <br />
+          clothes from us.
+        </p>
+      </div>
+      <ul class="flex flex-row gap-[14px]">
+        <li>
+          <a href="#"><img src="./../assets/images/fb.svg" alt="" srcset="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./../assets/images/insta.svg" alt="" srcset="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./../assets/images/twitter.svg" alt="" srcset="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./../assets/images/linkedin.png" alt="" srcset="" /></a>
+        </li>
+      </ul>
+    </div>
+    <div class="flex flex-col gap-[50px] md:gap-[188px] md:flex-row">
+      <div class="flex flex-col text-[#D9D9D9] gap-8">
+        <h4 class="font-bold">Company</h4>
+        <ul class="flex flex-col gap-8">
+          <li><a href="http://">About us</a></li>
+          <li><a href="contactMe.html">Contact us</a></li>
+          <li><a href="http://">Support</a></li>
+          <li><a href="http://">Carrers</a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col text-[#D9D9D9] gap-8">
+        <h4 class="font-bold">Quick Link</h4>
+        <ul class="flex flex-col gap-8">
+          <li><a href="http://">Share Location</a></li>
+          <li><a href="http://">Orders Tracking</a></li>
+          <li><a href="http://">Size Guide</a></li>
+          <li><a href="http://">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col text-[#D9D9D9] gap-8">
+        <h4 class="font-bold">Legal</h4>
+        <ul class="flex flex-col gap-8">
+          <li><a href="http://">Terms & conditions</a></li>
+          <li><a href="http://">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/index.js"></script>
+  <script>
+    // Initialize EmailJS
+    emailjs.init({
+      publicKey: "PUBLIC_KEY",
+    });
+    // Form submit handler
+    document
+      .getElementById("contact-form")
+      .addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const form = e.target;
+        const formData = new FormData(form);
+
+        // Create an object from the form data
+        const data = {
+          from_name: formData.get("username"),
+          message: formData.get("description"),
+          reply_to: formData.get("email"),
+        };
+        console.log(data)
+
+        // Send email using EmailJS
+        emailjs
+          .send(
+            "SERVICE_ID",
+            "TEMPLATE_ID",
+            data,
+            "PUBLIC_ID"
+          )
+          .then((response) => {
+            alert("Your message has been sent successfully!");
+            form.reset(); // Clear form after submission
+          })
+          .catch((error) => {
+            console.log(error)
+            alert(
+              "There was an error sending your message. Please try again."
+            );
+          });
+      });
+  </script>
+</body>
+
+</html>
