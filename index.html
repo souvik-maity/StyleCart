@@ -24,6 +24,11 @@
 </head>
 
 <body class="light-mode bg-slate-50">
+    <div id="loader" class="fixed top-0 left-0 bg-black w-full h-screen flex justify-center items-center z-50">
+        <img class="h-10" src="./images/infinite-spinner.svg" alt="lading">
+    </div>
+    <div id="content" class="hidden">
+
     <nav class="bg-transparent text-black w-full uppercase tracking-[0.22px] md:text-[22px] h-3 py-2">
         <div class="container mx-auto flex flex-row justify-between items-center">
             <div>
@@ -375,7 +380,14 @@
         </div>
     </footer>
     <button id="scrollToTopBtn" onclick="scrollToTop()">⬆</button>
+</div>
+
     <script src="index.js"></script>
 </body>
-
+    <script>
+      setTimeout(()=>{
+        document.getElementById('loader').style.display='none';
+        document.getElementById('content').style.display='block';
+      },2000)
+    </script>
 </html>
