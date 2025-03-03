@@ -3,9 +3,9 @@
 
 <head>
     <!-- Standard Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="icon" type="image/x-icon" href="public/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
     <!-- Apple Touch Icon (For iPhones & iPads) -->
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
@@ -16,8 +16,8 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/css/tailwind.css">
-    <link rel="stylesheet" href="./src/css/index.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js" defer></script>
     <title>Ecommerce Landing Page</title>
@@ -27,26 +27,26 @@
     <nav class="bg-transparent text-black w-full uppercase tracking-[0.22px] md:text-[22px] h-3 py-2">
         <div class="container mx-auto flex flex-row justify-between items-center">
             <div>
-                <img id="shopLogo" src="./src/assets/images/logo-black.png" alt="Shop Logo" srcset="" />
+                <img id="shopLogo" src="./images/logo-black.png" alt="Shop Logo" srcset="" />
             </div>
             <ul class="text-black hidden md:flex flex-row gap-16 justify-end items-center">
                 <li class="relative group hover:scale-105 hover:duration-150">
-                    <a href="./src/pages/catalogue.html" class="custom-button">Catalogue</a>
+                    <a href="catalogue.html" class="custom-button">Catalogue</a>
                     <span
                         class="navbar-items-underline absolute left-1/2 bottom-0 h-[2px] w-0 bg-[#23272f] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                 </li>
                 <li class="relative group hover:scale-105 hover:duration-150">
-                    <a href="./src/pages/fashion.html" class="custom-button">Fashion</a>
+                    <a href="fashion.html" class="custom-button">Fashion</a>
                     <span
                         class="navbar-items-underline absolute left-1/2 bottom-0 h-[2px] w-0 bg-[#23272f] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                 </li>
                 <li class="relative group hover:scale-105 hover:duration-150">
-                    <a href="./src/pages/favourite.html" class="custom-button ">Favourite</a>
+                    <a href="favourite.html" class="custom-button ">Favourite</a>
                     <span
                         class="navbar-items-underline absolute left-1/2 bottom-0 h-[2px] w-0 bg-[#23272f] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                 </li>
                 <li class="relative group hover:scale-105 hover:duration-150">
-                    <a href="./src/pages/lifestyle.html" class="custom-button ">Lifestyle</a>
+                    <a href="lifestyle.html" class="custom-button ">Lifestyle</a>
                     <span
                         class="navbar-items-underline absolute left-1/2 bottom-0 h-[2px] w-0 bg-[#23272f] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                 </li>
@@ -57,7 +57,7 @@
                     </button>
                 </li>
                 <li class="relative group hover:scale-105 hover:duration-150">
-                    <a class="bg-black text-[#FFFFF0] rounded-md py-4 px-4" href="./src/pages/login.html">Sign up</a>
+                    <a class="bg-black text-[#FFFFF0] rounded-md py-4 px-4" href="login.html">Sign up</a>
                 </li>
             </ul>
             <div class="md:hidden">
@@ -68,18 +68,17 @@
                 </div>
                 <ul class="text-white flex flex-col justify-start gap-5 h-screen absolute top-0 left-0 bg-primary p-10 items-start -translate-x-full transition-all z-40"
                     id="mobile-nav">
-                    <li><a href="./src/pages/catalogue.html">Catalogue</a></li>
-                    <li><a href="./src/pages/fashion.html">Fashion</a></li>
-                    <li><a href="./src/pages/favourite.html">Favourite</a></li>
-                    <li><a href="./src/pages/lifestyle.html">Lifestyle</a></li>
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="#">Fashion</a></li>
+                    <li><a href="#">Favourite</a></li>
+                    <li><a href="#">Lifestyle</a></li>
                     <li>
                         <button type="button" id="modeSwitch" class="mode-changer">
                             Dark Mode
                         </button>
                     </li>
                     <li class="mt-4 -ml-1">
-                        <a class="bg-black text-[#FFFFF0] rounded-md py-2 px-3" href="./src/pages/login.html">Sign
-                            up</a>
+                        <a class="bg-black text-[#FFFFF0] rounded-md py-2 px-3" href="login.html">Sign up</a>
                     </li>
                 </ul>
             </div>
@@ -104,24 +103,24 @@
             </p>
             <div class="flex flex-col md:flex-row md:items-center justify-evenly gap-9 pt-8">
                 <div class="w-1/2 h-1/2">
-                    <img class="" src="./src/assets/images/banner-image-2.png" alt="banner image" srcset="" />
+                    <img class="" src="./images/banner-image-2.png" alt="banner image" srcset="" />
                 </div>
                 <a class="bg-black text-[#FFFFF0] rounded-md py-4 px-4 text-center" href="#">Shop Now</a>
             </div>
         </div>
         <div class="">
-            <img class="w-full" src="./src/assets/images/banner-image.png" alt="banner image" />
+            <img class="w-full" src="./images/banner-image.png" alt="banner image" />
         </div>
     </section>
     <section class="banner">
         <div class="banner__container">
-            <img src="./src/assets/images/amazon.png" alt="banner" />
-            <img src="./src/assets/images/lacoste.png" alt="banner" />
-            <img src="./src/assets/images/levis.png" alt="banner" />
-            <img src="./src/assets/images/shopify.png" alt="banner" />
-            <img src="./src/assets/images/obey.png" alt="banner" />
-            <img src="./src/assets/images/hm.png" alt="banner" />
-            <img src="./src/assets/images/FASHION.png" alt="banner" />
+            <img src="images/amazon.png" alt="banner" />
+            <img src="images/lacoste.png" alt="banner" />
+            <img src="images/levis.png" alt="banner" />
+            <img src="images/shopify.png" alt="banner" />
+            <img src="images/obey.png" alt="banner" />
+            <img src="images/hm.png" alt="banner" />
+            <img src="images/FASHION.png" alt="banner" />
         </div>
     </section>
 
@@ -129,97 +128,97 @@
         <div class="relative text-black">
             <h2 class="text-4xl font-black md:text-5xl z-20">
                 NEW ARRIVALS</h2>
-            <img class="mark" src="./src/assets/images/banner-image-2.png" alt="img" />
+            <img class="mark" src="./images/banner-image-2.png" alt="img" />
         </div>
 
         <div class="swiper mySwiper mt-10">
             <div class="swiper-wrapper">
                 <!-- Slide 1 -->
                 <div class="swiper-slide flex flex-col w-full gap-7">
-                    <img class="w-full h-[704px] object-cover object-[75%] rounded-[20px]"
-                        src="./src/assets/images/hoddiee.png" alt="img" />
+                    <img class="w-full h-[704px] object-cover object-[75%] rounded-[20px]" src="./images/hoddiee.png"
+                        alt="img" />
                     <div class="flex flex-row justify-between items-center">
                         <div class="flex flex-col">
                             <h3 class="text-[32px] text-black font-medium">Hoodies & Sweatshirt</h3>
                             <a class="text-2xl text-[#7F7F7F]" href="#">Explore Now!</a>
                         </div>
                         <div>
-                            <img src="./src/assets/images/arrow.png" alt="" srcset="">
+                            <img src="./images/arrow.png" alt="" srcset="">
                         </div>
                     </div>
                 </div>
 
                 <!-- Slide 2 -->
                 <div class="swiper-slide flex flex-col w-full gap-7">
-                    <img class="w-full h-[704px] object-cover object-[34%] rounded-[20px]"
-                        src="./src/assets/images/coats.png" alt="img" />
+                    <img class="w-full h-[704px] object-cover object-[34%] rounded-[20px]" src="./images/coats.png"
+                        alt="img" />
                     <div class="flex flex-row justify-between items-center">
                         <div class="flex flex-col">
                             <h3 class="text-[32px] text-black font-medium">Coats & Parkas</h3>
                             <a class="text-2xl text-[#7F7F7F]" href="#">Explore Now!</a>
                         </div>
                         <div>
-                            <img src="./src/assets/images/arrow.png" alt="" srcset="">
+                            <img src="./images/arrow.png" alt="" srcset="">
                         </div>
                     </div>
                 </div>
 
                 <!-- Slide 3 -->
                 <div class="swiper-slide flex flex-col w-full gap-7">
-                    <img class="w-full h-[704px] object-cover object-[47%] rounded-[20px]"
-                        src="./src/assets/images/T-shirts.png" alt="img" />
+                    <img class="w-full h-[704px] object-cover object-[47%] rounded-[20px]" src="./images/T-shirts.png"
+                        alt="img" />
                     <div class="flex flex-row justify-between items-center">
                         <div class="flex flex-col">
                             <h3 class="text-[32px] text-black font-medium">Tees & T-Shirt</h3>
                             <a class="text-2xl text-[#7F7F7F]" href="#">Explore Now!</a>
                         </div>
                         <div>
-                            <img src="./src/assets/images/arrow.png" alt="" srcset="">
+                            <img src="./images/arrow.png" alt="" srcset="">
                         </div>
                     </div>
                 </div>
 
                 <!--Slide 4-->
                 <div class="swiper-slide flex flex-col w-full gap-7">
-                    <img class="w-full h-[704px] object-cover object-[34%] rounded-[20px]"
-                        src="./src/assets/images/fav-1.png" alt="img" />
+                    <img class="w-full h-[704px] object-cover object-[34%] rounded-[20px]" src="./images/fav-1.png"
+                        alt="img" />
                     <div class="flex flex-row justify-between items-center">
                         <div class="flex flex-col">
                             <h3 class="text-[32px] text-black font-medium">Coats & Parkas</h3>
                             <a class="text-2xl text-[#7F7F7F]" href="#">Explore Now!</a>
                         </div>
                         <div>
-                            <img src="./src/assets/images/arrow.png" alt="" srcset="">
+                            <img src="./images/arrow.png" alt="" srcset="">
                         </div>
                     </div>
                 </div>
 
                 <!--Slide 5-->
                 <div class="swiper-slide flex flex-col w-full gap-7">
-                    <img class="w-full h-[704px] object-cover object-[34%] rounded-[20px]"
-                        src="./src/assets/images/coats.png" alt="img" />
+                    <img class="w-full h-[704px] object-cover object-[34%] rounded-[20px]" src="./images/coats.png"
+                        alt="img" />
                     <div class="flex flex-row justify-between items-center">
                         <div class="flex flex-col">
                             <h3 class="text-[32px] text-black font-medium">Coats & Parkas</h3>
                             <a class="text-2xl text-[#7F7F7F]" href="#">Explore Now!</a>
                         </div>
                         <div>
-                            <img src="./src/assets/images/arrow.png" alt="" srcset="">
+                            <img src="./images/arrow.png" alt="" srcset="">
                         </div>
                     </div>
                 </div>
 
                 <!--Slide 6-->
                 <div class="swiper-slide flex flex-col w-full gap-7">
-                    <img class="w-full h-[704px] object-cover object-[34%] rounded-[20px]"
-                        src="./src/assets/images/fav-2.png" alt="img" />
+                    <img class="w-full h-[704px] object-cover object-[34%] rounded-[20px]" src="./images/fav-2.png"
+                        alt="img" />
                     <div class="flex flex-row justify-between items-center">
                         <div class="flex flex-col">
                             <h3 class="text-[32px] text-black font-medium">Coats & Parkas</h3>
                             <a class="text-2xl text-[#7F7F7F]" href="#">Explore Now!</a>
                         </div>
                         <div>
-                            <img src="./src/assets/images/arrow.png" alt="" srcset="">
+                            <img src="./images/arrow.png" alt="" srcset="">
                         </div>
                     </div>
                 </div>
@@ -245,8 +244,7 @@
         <div class="grid grid-flow-row grid-row-1 gap-12 md:grid-flow-col md:grid-cols-2">
             <div class="flex flex-col gap-7">
                 <div class="">
-                    <img class="w-full h-[704px] object-cover object-[25%] rounded-[20px]"
-                        src="./src/assets/images/fav-1.png" alt="" />
+                    <img class="w-full h-[704px] object-cover object-[25%] rounded-[20px]" src="./images/fav-1.png" />
                 </div>
                 <div class="flex flex-row justify-between items-center">
                     <div class="flex flex-col">
@@ -256,15 +254,14 @@
                         <a class="text-2xl text-[#7F7F7F]" href="#">Explore Now!</a>
                     </div>
                     <div>
-                        <img src="./src/assets/images/arrow.png" alt="" srcset="" />
+                        <img src="./images/arrow.png" alt="" srcset="" />
                     </div>
                 </div>
             </div>
 
             <div class="flex flex-col gap-7">
                 <div class="h-[704px]">
-                    <img class="w-full h-[704px] object-cover object-[34%] rounded-[20px]"
-                        src="./src/assets/images/fav-2.png" alt="" />
+                    <img class="w-full h-[704px] object-cover object-[34%] rounded-[20px]" src="./images/fav-2.png" />
                 </div>
                 <div class="flex flex-row justify-between items-center">
                     <div class="flex flex-col">
@@ -272,7 +269,7 @@
                         <a class="text-2xl text-[#7F7F7F]" href="#">Explore Now!</a>
                     </div>
                     <div>
-                        <img src="./src/assets/images/arrow.png" alt="" srcset="" />
+                        <img src="./images/arrow.png" alt="" srcset="" />
                     </div>
                 </div>
             </div>
@@ -288,12 +285,12 @@
                 Get 30% off for first transaction using <br /> Rondovision mobile app for now.
             </p>
             <div class="flex flex-col md:flex-row gap-5 mt-16">
-                <img class="w-[204px]" src="./src/assets/images/apple-store.png" alt="" srcset="" />
-                <img class="w-[204px]" src="./src/assets/images/play-store.png" alt="" srcset="" />
+                <img class="w-[204px]" src="./images/apple-store.png" alt="" srcset="" />
+                <img class="w-[204px]" src="./images/play-store.png" alt="" srcset="" />
             </div>
         </div>
         <div class="flex-1">
-            <img src="./src/assets/images/mobile-app.png" alt="" />
+            <img src="./images/mobile-app.png" alt="" />
         </div>
     </section>
     <section class="flex flex-col items-center py-36 bg-primary">
@@ -319,7 +316,7 @@
         class="bg-black py-[125px] text-white flex flex-col gap-24 px-14 md:items-center md:gap-[415px] md:flex-row md:justify-between md:px-[100px]">
         <div class="flex flex-col items-start gap-8">
             <div>
-                <img src="./src/assets/images/FASHION.png" alt="" />
+                <img src="./images/FASHION.png" />
             </div>
             <div>
                 <p class="text-xl text-[#8E8E8E] md:text-2xl font-normal">
@@ -328,16 +325,16 @@
             </div>
             <ul class="flex flex-row gap-[14px]">
                 <li>
-                    <a href="#"><img src="./src/assets/images/fb.svg" alt="facebook" srcset="" /></a>
+                    <a href="#"><img src="./images/fb.svg" alt="" srcset="" /></a>
                 </li>
                 <li>
-                    <a href="#"><img src="./src/assets/images/insta.svg" alt="instagram" srcset="" /></a>
+                    <a href="#"><img src="./images/insta.svg" alt="" srcset="" /></a>
                 </li>
                 <li>
-                    <a href="#"><img src="./src/assets/images/twitter.svg" alt="twitter" srcset="" /></a>
+                    <a href="#"><img src="./images/twitter.svg" alt="" srcset="" /></a>
                 </li>
                 <li>
-                    <a href="#"><img src="./src/assets/images/linkedin.png" alt="linkedin" srcset="" /></a>
+                    <a href="#"><img src="./images/linkedin.png" alt="" srcset="" /></a>
                 </li>
             </ul>
         </div>
@@ -346,13 +343,13 @@
                 <h4 class="font-bold">Company</h4>
                 <ul class="flex flex-col gap-8">
 
-                    <li><a href="./src/pages/aboutUs.html">About us</a></li>
-                    <li><a href="./src/pages/contactMe.html">Contact us</a></li>
+                    <li><a href="aboutUs.html">About us</a></li>
+                    <li><a href="contactMe.html">Contact us</a></li>
                     <li><a href="http://">Support</a></li>
                     <li><a href="http://">Carrers</a></li>
 
                     <li><a href="http://" class="hover:text-yellow-400">About us</a></li>
-                    <li><a href="./src/pages/contactMe.html" class="hover:text-yellow-400">Contact us</a></li>
+                    <li><a href="contactMe.html" class="hover:text-yellow-400">Contact us</a></li>
                     <li><a href="http://" class="hover:text-yellow-400">Support</a></li>
                     <li><a href="http://" class="hover:text-yellow-400">Carrers</a></li>
 
@@ -377,7 +374,7 @@
         </div>
     </footer>
     <button id="scrollToTopBtn" onclick="scrollToTop()">⬆</button>
-    <script src="./src/js/index.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>

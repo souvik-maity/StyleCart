@@ -8,19 +8,14 @@
 }
 
 body {
-    background: url('../../assets/images/bg.png') no-repeat center center;
-    background-size: cover;
-    /* Ensures the image covers the whole screen */
-    background-attachment: fixed;
-    /* Prevents scrolling effect */
-    height: 100vh;
-    /* Full viewport height */
-    width: 100vw;
-    /* Full viewport width */
+    background: url('images/bg.png') no-repeat center center;
+    background-size: cover; /* Ensures the image covers the whole screen */
+    background-attachment: fixed; /* Prevents scrolling effect */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    /* Removes scrolling */
+    overflow: hidden; /* Removes scrolling */
     display: flex;
     align-items: center;
     justify-content: center;
