@@ -1,15 +1,16 @@
 /* General Styling */
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #ffffff, #f8f9fa); 
+    background: linear-gradient(135deg, #ffffff, #f8f9fa);
     text-align: center;
     margin: 0;
     padding: 0;
-    color: #333; 
+    color: #333;
 }
 
 /* Header */
-header {
+header,
+main {
     background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
     padding: 20px;
@@ -17,7 +18,7 @@ header {
     border-radius: 15px;
     margin: 20px auto;
     width: 90%;
-    color: #1e1e1e; 
+    color: #1e1e1e;
     font-weight: bold;
 }
 
@@ -27,7 +28,7 @@ header {
     margin: 5px;
     border: none;
     cursor: pointer;
-    background: linear-gradient(135deg, #1e3c72, #2a5298); 
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
     color: #ffffff;
     font-size: 18px;
     font-weight: bold;
@@ -37,7 +38,7 @@ header {
 
 .filter-btn:hover {
     transform: scale(1.1);
-    background: linear-gradient(135deg, #b78e2f, #ffcc00); 
+    background: linear-gradient(135deg, #b78e2f, #ffcc00);
     color: #1e1e1e;
 }
 
@@ -86,7 +87,7 @@ header {
 /* 3D Hover Effect */
 .dress-card:hover {
     transform: translateY(-10px) scale(1.05);
-    box-shadow: 0px 15px 30px rgba(255, 204, 0, 0.116); 
+    box-shadow: 0px 15px 30px rgba(255, 204, 0, 0.116);
 }
 
 /* Dress Images */
@@ -108,12 +109,5 @@ header {
     margin-top: 10px;
     font-size: 18px;
     font-weight: bold;
-    color: #1e3c72; 
-}
-
-/* Hidden Class for Smooth Transitions */
-.hidden {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: 0.5s;
+    color: #1e3c72;
 }
