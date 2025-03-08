@@ -1,16 +1,35 @@
 /* General Styling */
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #ffffff, #f8f9fa);
     text-align: center;
     margin: 0;
     padding: 0;
-    color: #333;
+}
+.light-mode h1{
+    font-size: 2rem;
+    color: #222222;
+    margin: 0.5rem;
+}
+.dark-mode h1{
+    font-size: 2rem;
+    color:#ffd700;
+    margin: 0.5rem;
 }
 
+.light-mode h2{
+    font-size: 1.5rem;
+    color: #1e1e1e;
+    margin: 1rem;
+}
+
+.dark-mode h2{
+    font-size: 1.5rem;
+    color:#ffcc00;
+    margin: 1rem;
+}
 /* Header */
-header,
-main {
+.light-mode header,
+.light-mode main {
     background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
     padding: 20px;
@@ -22,8 +41,23 @@ main {
     font-weight: bold;
 }
 
+
+
+.dark-modeheader, .dark-mode main {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin: 20px auto;
+    width: 90%;
+    color: #1e1e1e;
+    font-weight: bold;
+}
+
+
 /* Navigation Buttons */
-.filter-btn {
+.light-mode .filter-btn {
     padding: 12px 20px;
     margin: 5px;
     border: none;
@@ -36,10 +70,29 @@ main {
     transition: 0.4s;
 }
 
-.filter-btn:hover {
+.light-mode .filter-btn:hover {
     transform: scale(1.1);
     background: linear-gradient(135deg, #b78e2f, #ffcc00);
     color: #1e1e1e;
+}
+
+.dark-mode .filter-btn {
+    padding: 12px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(135deg, #c49a3a, #b8860b); /* Gold gradient */
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: 0.4s;
+}
+
+.dark-mode .filter-btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #e0b84b, #c49a3a);
+    color: white;
 }
 
 /* Catalogue Section */
@@ -51,13 +104,24 @@ main {
 }
 
 /* Category Containers */
-.category {
+.light-mode .category {
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(15px);
     margin: 15px;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    width: 85%;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.dark-mode .category {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    margin: 15px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(255, 215, 0, 0.2);
     width: 85%;
     transition: transform 0.5s, opacity 0.5s;
 }
@@ -70,7 +134,7 @@ main {
     margin-top: 10px;
 }
 
-.dress-card {
+.light-mode .dress-card {
     background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
     padding: 15px;
@@ -84,11 +148,31 @@ main {
     position: relative;
 }
 
+.dark-mode .dress-card {
+    background: linear-gradient(145deg, #222222, #292929); /* Dark card */
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(255, 215, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 220px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+
 /* 3D Hover Effect */
-.dress-card:hover {
+.light-mode .dress-card:hover {
     transform: translateY(-10px) scale(1.05);
     box-shadow: 0px 15px 30px rgba(255, 204, 0, 0.116);
 }
+
+.dark-mode .dress-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0px 15px 30px rgba(255, 215, 0, 0.4);
+}
+
 
 /* Dress Images */
 .dress-card img {
@@ -105,9 +189,16 @@ main {
 }
 
 /* Dress Title */
-.dress-card p {
+.light-mode .dress-card p {
     margin-top: 10px;
     font-size: 18px;
     font-weight: bold;
     color: #1e3c72;
+}
+
+.dark-mode .dress-card p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffd700; /* Gold text */
 }
