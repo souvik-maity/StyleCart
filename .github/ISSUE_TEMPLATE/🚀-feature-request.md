@@ -1,6 +1,6 @@
 ---
 name: "\U0001F680 Feature Request"
-about: Suggest an idea to improve the Star Cart.
+about: Suggest an idea to improve the Style Cart.
 title: "[FEATURE]"
 labels: ''
 assignees: ''
