@@ -1,6 +1,6 @@
 ---
 name: "\U0001F680 Feature Request"
-about: Suggest an idea to improve the Rentalog.in frontend
+about: Suggest an idea to improve the Star Cart.
 title: "[FEATURE]"
 labels: ''
 assignees: ''
