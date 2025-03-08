@@ -58,7 +58,7 @@ class Mode {
         });
       });
 
-      document.getElementById('shopLogo').src = './images/logo-white.png';
+      document.getElementById('shopLogo').src = './src/assets/images/logo-white.png';
 
       Mode.#value = 'dark';
     } else if (Mode.#value === 'dark') {
@@ -79,7 +79,7 @@ class Mode {
         });
       });
 
-      document.getElementById('shopLogo').src = './images/logo-black.png';
+      document.getElementById('shopLogo').src = './src/assets/images/logo-black.png';
       Mode.#value = 'light';
     }
 
