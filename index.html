@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/css/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js" defer></script>
     <title>Ecommerce Landing Page</title>
 </head>
@@ -132,15 +133,18 @@
             <img class="mark" src="./src/assets/images/banner-image-2.png" alt="img" />
         </div>
 
-        <div class="swiper mySwiper mt-10">
+        <div class="swiper mySwiper mt-10 ">
             <div class="swiper-wrapper">
                 <!-- Slide 1 -->
-                <div class="swiper-slide flex flex-col w-full gap-7">
-                    <img class="w-full h-[704px] object-cover object-[75%] rounded-[20px]"
-                        src="./src/assets/images/hoddiee.png" alt="img" />
+                <div class="swiper-slide  flex flex-col w-full gap-7 group">
+                    <div class="h-[500px] w-full overflow-hidden rounded-[20px] ">
+                        <img class="w-full h-full object-cover object-[80%]  group-hover:scale-110 transition ease-in-out duration-300"
+                            src="./src/assets/images/hoddiee.png" alt="img" />
+                    </div>
+
                     <div class="flex flex-row justify-between items-center">
                         <div class="flex flex-col">
-                            <h3 class="text-[32px] text-black font-medium">Hoodies & Sweatshirt</h3>
+                            <h3 class="text-2xl text-black font-medium">Hoodies & Sweatshirt</h3>
                             <a class="text-2xl text-[#7F7F7F]" href="#">Explore Now!</a>
                         </div>
                         <div>
@@ -150,12 +154,14 @@
                 </div>
 
                 <!-- Slide 2 -->
-                <div class="swiper-slide flex flex-col w-full gap-7">
-                    <img class="w-full h-[704px] object-cover object-[34%] rounded-[20px]"
-                        src="./src/assets/images/coats.png" alt="img" />
+                <div class="swiper-slide flex flex-col w-full gap-7 group">
+                    <div class="h-[500px] w-full overflow-hidden rounded-[20px] ">
+                        <img class="w-full h-[704px] object-cover object-[34%] rounded-[20px] group-hover:scale-110 transition ease-in-out duration-300"
+                            src="./src/assets/images/coats.png" alt="img" />
+                    </div>
                     <div class="flex flex-row justify-between items-center">
                         <div class="flex flex-col">
-                            <h3 class="text-[32px] text-black font-medium">Coats & Parkas</h3>
+                            <h3 class="text-2xl text-black font-medium">Coats & Parkas</h3>
                             <a class="text-2xl text-[#7F7F7F]" href="#">Explore Now!</a>
                         </div>
                         <div>
@@ -165,12 +171,15 @@
                 </div>
 
                 <!-- Slide 3 -->
-                <div class="swiper-slide flex flex-col w-full gap-7">
-                    <img class="w-full h-[704px] object-cover object-[47%] rounded-[20px]"
-                        src="./src/assets/images/T-shirts.png" alt="img" />
+                <div class="swiper-slide flex flex-col w-full gap-7 group">
+                    <div class="h-[500px] w-full overflow-hidden rounded-[20px] ">
+                        <img class="w-full h-full object-cover object-[47%] rounded-[20px] group-hover:scale-110 transition ease-in-out duration-300"
+                            src="./src/assets/images/T-shirts.png" alt="img" />
+                    </div>
+
                     <div class="flex flex-row justify-between items-center">
                         <div class="flex flex-col">
-                            <h3 class="text-[32px] text-black font-medium">Tees & T-Shirt</h3>
+                            <h3 class="text-2xl text-black font-medium">Tees & T-Shirt</h3>
                             <a class="text-2xl text-[#7F7F7F]" href="#">Explore Now!</a>
                         </div>
                         <div>
@@ -180,12 +189,14 @@
                 </div>
 
                 <!--Slide 4-->
-                <div class="swiper-slide flex flex-col w-full gap-7">
-                    <img class="w-full h-[704px] object-cover object-[34%] rounded-[20px]"
-                        src="./src/assets/images/fav-1.png" alt="img" />
+                <div class="swiper-slide flex flex-col w-full gap-7 group">
+                    <div class="h-[500px] w-full overflow-hidden rounded-[20px] ">
+                        <img class="w-full h-full object-cover object-[34%] rounded-[20px] group-hover:scale-110 transition ease-in-out duration-300"
+                            src="./src/assets/images/fav-1.png" alt="img" />
+                    </div>
                     <div class="flex flex-row justify-between items-center">
                         <div class="flex flex-col">
-                            <h3 class="text-[32px] text-black font-medium">Coats & Parkas</h3>
+                            <h3 class="text-2xl text-black font-medium">Coats & Parkas</h3>
                             <a class="text-2xl text-[#7F7F7F]" href="#">Explore Now!</a>
                         </div>
                         <div>
@@ -195,12 +206,14 @@
                 </div>
 
                 <!--Slide 5-->
-                <div class="swiper-slide flex flex-col w-full gap-7">
-                    <img class="w-full h-[704px] object-cover object-[34%] rounded-[20px]"
-                        src="./src/assets/images/coats.png" alt="img" />
+                <div class="swiper-slide flex flex-col w-full gap-7 group">
+                    <div class="h-[500px] w-full overflow-hidden rounded-[20px] ">
+                        <img class="w-full h-full object-cover object-[34%] rounded-[20px] group-hover:scale-110 transition ease-in-out duration-300"
+                            src="./src/assets/images/coats.png" alt="img" />
+                    </div>
                     <div class="flex flex-row justify-between items-center">
                         <div class="flex flex-col">
-                            <h3 class="text-[32px] text-black font-medium">Coats & Parkas</h3>
+                            <h3 class="text-2xl text-black font-medium">Coats & Parkas</h3>
                             <a class="text-2xl text-[#7F7F7F]" href="#">Explore Now!</a>
                         </div>
                         <div>
@@ -210,12 +223,14 @@
                 </div>
 
                 <!--Slide 6-->
-                <div class="swiper-slide flex flex-col w-full gap-7">
-                    <img class="w-full h-[704px] object-cover object-[34%] rounded-[20px]"
-                        src="./src/assets/images/fav-2.png" alt="img" />
+                <div class="swiper-slide flex flex-col w-full gap-7 group">
+                    <div class="h-[500px] w-full overflow-hidden rounded-[20px] ">
+                        <img class="w-full h-full object-cover object-[34%] rounded-[20px] group-hover:scale-110 transition ease-in-out duration-300"
+                            src="./src/assets/images/fav-2.png" alt="img" />
+                    </div>
                     <div class="flex flex-row justify-between items-center">
                         <div class="flex flex-col">
-                            <h3 class="text-[32px] text-black font-medium">Coats & Parkas</h3>
+                            <h3 class="text-2xl text-black font-medium">Coats & Parkas</h3>
                             <a class="text-2xl text-[#7F7F7F]" href="#">Explore Now!</a>
                         </div>
                         <div>
@@ -235,7 +250,7 @@
         </div>
     </section>
 
-    <section class="flex flex-col container items-start my-[190px] gap-28 mx-auto">
+    <section class="flex flex-col container items-start my-[100px] gap-28 mx-auto">
         <div class="relative text-black">
             <h2
                 class="text-4xl font-black after:content-oval after:absolute after:left-[50%] after:-bottom-2.5 after:-z-10 md:text-5xl">
