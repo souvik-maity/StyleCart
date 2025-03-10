@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.0.9",
+    "gsap": "^3.12.7",
     "swiper": "^11.2.4"
   }
 }

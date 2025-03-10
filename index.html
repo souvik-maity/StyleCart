@@ -24,31 +24,27 @@
 </head>
 
 <body class="light-mode bg-slate-50">
-    <nav class="bg-transparent text-black w-full uppercase tracking-[0.22px] md:text-[22px] h-3 py-2">
+    <nav class="bg-transparent text-black w-full uppercase tracking-[0.22px] text-sm md:text-[20px] py-4 px-4 sm:px-6 lg:px-8">
         <div class="container mx-auto flex flex-row justify-between items-center">
             <div>
-                <img id="shopLogo" src="./src/assets/images/logo-black.png" alt="Shop Logo" srcset="" />
+                <img id="shopLogo" src="./src/assets/images/logo-black.png" alt="Shop Logo" class="h-8 md:h-12" />
             </div>
-            <ul class="text-black hidden md:flex flex-row gap-16 justify-end items-center">
+            <ul class="text-black hidden md:flex flex-row gap-8 lg:gap-12 justify-end items-center">
                 <li class="relative group hover:scale-105 hover:duration-150">
                     <a href="./src/pages/catalogue.html" class="custom-button">Catalogue</a>
-                    <span
-                        class="navbar-items-underline absolute left-1/2 bottom-0 h-[2px] w-0 bg-[#23272f] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                    <span class="navbar-items-underline absolute left-1/2 bottom-0 h-[2px] w-0 bg-[#23272f] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                 </li>
                 <li class="relative group hover:scale-105 hover:duration-150">
                     <a href="./src/pages/fashion.html" class="custom-button">Fashion</a>
-                    <span
-                        class="navbar-items-underline absolute left-1/2 bottom-0 h-[2px] w-0 bg-[#23272f] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                    <span class="navbar-items-underline absolute left-1/2 bottom-0 h-[2px] w-0 bg-[#23272f] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                 </li>
                 <li class="relative group hover:scale-105 hover:duration-150">
-                    <a href="./src/pages/favourite.html" class="custom-button ">Favourite</a>
-                    <span
-                        class="navbar-items-underline absolute left-1/2 bottom-0 h-[2px] w-0 bg-[#23272f] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                    <a href="./src/pages/favourite.html" class="custom-button">Favourite</a>
+                    <span class="navbar-items-underline absolute left-1/2 bottom-0 h-[2px] w-0 bg-[#23272f] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                 </li>
                 <li class="relative group hover:scale-105 hover:duration-150">
-                    <a href="./src/pages/lifestyle.html" class="custom-button ">Lifestyle</a>
-                    <span
-                        class="navbar-items-underline absolute left-1/2 bottom-0 h-[2px] w-0 bg-[#23272f] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                    <a href="./src/pages/lifestyle.html" class="custom-button">Lifestyle</a>
+                    <span class="navbar-items-underline absolute left-1/2 bottom-0 h-[2px] w-0 bg-[#23272f] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                 </li>
                 <li class="relative group hover:scale-105 hover:duration-150">
                     <button type="button" id="darkModeToggle" class="toggle hover:scale-125 hover:duration-1000">
@@ -56,8 +52,8 @@
                         <span class="icon moon">🌙</span>
                     </button>
                 </li>
-                <li class="relative group hover:scale-105 hover:duration-150">
-                    <a class="bg-black text-[#FFFFF0] rounded-md py-4 px-4" href="./src/pages/login.html">Sign up</a>
+                <li class="relative group hover:scale-105 w-36 lg:w-44 hover:duration-150">
+                    <a class="bg-black text-[#FFFFF0] rounded-md py-3 px-4 lg:py-4 lg:px-6" href="./src/pages/login.html">Sign up</a>
                 </li>
             </ul>
             <div class="md:hidden">
@@ -66,20 +62,18 @@
                     <div class="w-6 h-0.5 transition-all bg-black"></div>
                     <div class="w-6 h-0.5 transition-all bg-black"></div>
                 </div>
-                <ul class="text-white flex flex-col justify-start gap-5 h-screen absolute top-0 left-0 bg-primary p-10 items-start -translate-x-full transition-all z-40"
-                    id="mobile-nav">
+                <ul class="text-white flex flex-col justify-start gap-5 h-screen absolute top-0 left-0 bg-primary p-10 items-start -translate-x-full transition-all z-40 w-3/4 sm:w-1/2" id="mobile-nav">
                     <li><a href="./src/pages/catalogue.html">Catalogue</a></li>
-                    <li><a href="#">Fashion</a></li>
-                    <li><a href="#">Favourite</a></li>
-                    <li><a href="#">Lifestyle</a></li>
+                    <li><a href="./src/pages/fashion.html">Fashion</a></li>
+                    <li><a href="./src/pages/favourite.html">Favourite</a></li>
+                    <li><a href="./src/pages/lifestyle.html">Lifestyle</a></li>
                     <li>
                         <button type="button" id="modeSwitch" class="mode-changer">
                             Dark Mode
                         </button>
                     </li>
                     <li class="mt-4 -ml-1">
-                        <a class="bg-black text-[#FFFFF0] rounded-md py-2 px-3" href="./src/pages/login.html">Sign
-                            up</a>
+                        <a class="bg-black text-[#FFFFF0] rounded-md py-2 px-3" href="./src/pages/login.html">Sign up</a>
                     </li>
                 </ul>
             </div>
@@ -87,7 +81,7 @@
     </nav>
 
     <section
-        class="flex flex-col container mx-auto bg-[#F4F6F5] rounded-[59px] pt-16 px-10 md:items-center md:px-20 md:pt-[68px] md:flex-row md:justify-between gap-10 z-30 my-32">
+        class="flex flex-col container mx-auto bg-[#F4F6F5] rounded-[59px] pt-1 px-10 md:items-center md:px-20 md:pt-[68px] md:flex-row md:justify-between gap-10 z-30 my-32">
         <div class="flex flex-col items-start text-black md:pb-[68px] z-10">
             <h1 class="text-4xl font-black leading-[125%] sm:text-5xl md:text-[96px] md:leading-[125%]">
                 <span
@@ -235,44 +229,54 @@
         </div>
     </section>
 
-    <section class="flex flex-col container items-start my-[190px] gap-28 mx-auto">
+    <section class="flex flex-col container items-start my-24 md:my-[190px] gap-12 md:gap-24 mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Heading -->
         <div class="relative text-black">
-            <h2
-                class="text-4xl font-black after:content-oval after:absolute after:left-[50%] after:-bottom-2.5 after:-z-10 md:text-5xl">
+            <h2 class="text-3xl font-black after:content-oval after:absolute after:left-[50%] after:-bottom-2.5 after:-z-10 md:text-4xl lg:text-5xl">
                 Young’s Favourite
             </h2>
         </div>
-        <div class="grid grid-flow-row grid-row-1 gap-12 md:grid-flow-col md:grid-cols-2">
-            <div class="flex flex-col gap-7">
-                <div class="">
-                    <img class="w-full h-[704px] object-cover object-[25%] rounded-[20px]"
-                        src="./src/assets/images/fav-1.png" />
+    
+        <!-- Grid Container -->
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12">
+            <!-- First Card -->
+            <div class="flex flex-col gap-6">
+                <div class="h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px]">
+                    <img class="w-full h-full object-cover object-[25%] rounded-[20px]"
+                        src="./src/assets/images/fav-1.png" alt="Trending on Instagram" />
                 </div>
                 <div class="flex flex-row justify-between items-center">
                     <div class="flex flex-col">
-                        <h3 class="text-[32px] text-black font-medium">
-                            Trending on instagram
+                        <h3 class="text-xl sm:text-2xl md:text-3xl lg:text-[32px] text-black font-medium">
+                            Trending on Instagram
                         </h3>
-                        <a class="text-2xl text-[#7F7F7F]" href="#">Explore Now!</a>
+                        <a class="text-lg sm:text-xl lg:text-2xl text-[#7F7F7F] hover:text-black transition-colors" href="#">
+                            Explore Now!
+                        </a>
                     </div>
                     <div>
-                        <img src="./src/assets/images/arrow.png" alt="" srcset="" />
+                        <img class="w-8 h-8 sm:w-10 sm:h-10" src="./src/assets/images/arrow.png" alt="Arrow" />
                     </div>
                 </div>
             </div>
-
-            <div class="flex flex-col gap-7">
-                <div class="h-[704px]">
-                    <img class="w-full h-[704px] object-cover object-[34%] rounded-[20px]"
-                        src="./src/assets/images/fav-2.png" />
+    
+            <!-- Second Card -->
+            <div class="flex flex-col gap-6">
+                <div class="h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px]">
+                    <img class="w-full h-5/6 object-cover object-[40%] rounded-[20px]"
+                        src="./src/assets/images/fav-2.png" alt="All Under $40" />
                 </div>
                 <div class="flex flex-row justify-between items-center">
                     <div class="flex flex-col">
-                        <h3 class="text-[32px] text-black font-medium">All Under $40</h3>
-                        <a class="text-2xl text-[#7F7F7F]" href="#">Explore Now!</a>
+                        <h3 class="text-xl sm:text-2xl md:text-3xl lg:text-[32px] text-black font-medium">
+                            All Under $40
+                        </h3>
+                        <a class="text-lg sm:text-xl lg:text-2xl text-[#7F7F7F] hover:text-black transition-colors" href="#">
+                            Explore Now!
+                        </a>
                     </div>
                     <div>
-                        <img src="./src/assets/images/arrow.png" alt="" srcset="" />
+                        <img class="w-8 h-8 sm:w-10 sm:h-10" src="./src/assets/images/arrow.png" alt="Arrow" />
                     </div>
                 </div>
             </div>
@@ -296,7 +300,7 @@
             <img src="./src/assets/images/mobile-app.png" alt="" />
         </div>
     </section>
-    <section class="flex flex-col items-center py-36 bg-primary">
+    <section class="flex flex-col items-center py-20 bg-primary">
         <h4 class="text-3xl font-black text-black text-center tracking-[1.7px] mb-8 md:leading-[70px] md:text-[55px]">
             JOIN SHOPPING COMMUNITY TO <br /> GET MONTHLY PROMO
         </h4>
@@ -315,76 +319,81 @@
             </div>
         </form>
     </section>
-    <footer class="w-full bg-black">
-        <div
-            class=" text-white flex py-[80px] flex-col gap-24 px-14 md:items-center md:gap-[415px] md:flex-row md:justify-between md:px-[100px]">
-            <div class="flex flex-col items-start gap-8">
+   <footer class="w-full mt-10 bg-black">
+    <div class="text-white flex flex-col  py-12 md:py-20 gap-12 md:gap-24 px-6 sm:px-8 lg:px-12 xl:px-24">
+        <!-- Top Section -->
+        <div class="flex flex-col md:flex-row ml-14  justify-between gap-12 md:gap-24">
+            <!-- Logo and Social Media -->
+            <div class="flex flex-col items-start gap-8 md:gap-12">
                 <div>
-                    <img src="./src/assets/images/FASHION.png" />
+                    <img src="./src/assets/images/FASHION.png" alt="Fashion Logo" class="w-40 md:w-48 lg:w-56 mt-12" />
                 </div>
                 <div>
-                    <p class="text-xl text-[#8E8E8E] md:text-2xl font-normal">
+                    <p class="text-lg md:text-xl lg:text-2xl text-[#8E8E8E] font-normal">
                         Complete your style with awesome <br /> clothes from us.
                     </p>
                 </div>
-                <ul class="flex flex-row gap-[14px]">
+                <ul class="flex flex-row gap-4">
                     <li>
-                        <a href="#"><img src="./src/assets/images/fb.svg" alt="" srcset="" /></a>
+                        <a href="#"><img src="./src/assets/images/fb.svg" alt="Facebook" class="w-6 h-6 md:w-8 md:h-8" /></a>
                     </li>
                     <li>
-                        <a href="#"><img src="./src/assets/images/insta.svg" alt="" srcset="" /></a>
+                        <a href="#"><img src="./src/assets/images/insta.svg" alt="Instagram" class="w-6 h-6 md:w-8 md:h-8" /></a>
                     </li>
                     <li>
-                        <a href="#"><img src="./src/assets/images/twitter.svg" alt="" srcset="" /></a>
+                        <a href="#"><img src="./src/assets/images/twitter.svg" alt="Twitter" class="w-6 h-6 md:w-8 md:h-8" /></a>
                     </li>
                     <li>
-                        <a href="#"><img src="./src/assets/images/linkedin.png" alt="" srcset="" /></a>
+                        <a href="#"><img src="./src/assets/images/linkedin.png" alt="LinkedIn" class="w-6 h-6 md:w-8 md:h-8" /></a>
                     </li>
                 </ul>
             </div>
-            <div class="flex flex-col gap-[50px] md:gap-[188px] md:flex-row">
-                <div class="flex flex-col text-[#D9D9D9] gap-8">
-                    <h4 class="font-bold">Company</h4>
-                    <ul class="flex flex-col gap-8">
 
-                        <li><a href="aboutUs.html">About us</a></li>
-                        <li><a href="./src/pages/contactMe.html">Contact us</a></li>
-                        <li><a href="http://">Support</a></li>
-                        <li><a href="http://">Carrers</a></li>
-                        <li><a href="././src/pages/feedback.html">Feedback</a></li>
-
-                        <li><a href="http://" class="hover:text-yellow-400">About us</a></li>
-                        <li><a href="./src/pages/contactMe.html" class="hover:text-yellow-400">Contact us</a></li>
-                        <li><a href="http://" class="hover:text-yellow-400">Support</a></li>
-                        <li><a href="http://" class="hover:text-yellow-400">Carrers</a></li>
-
+            <!-- Links Section -->
+            <div class="flex flex-col mx-12 md:ml-0 gap-16 mt-10 md:flex-row md:gap-28">
+                <!-- Company Links -->
+                <div class="flex flex-col gap-7">
+                    <h4 class="text-xl md:text-2xl font-bold">Company</h4>
+                    <ul class="flex flex-col gap-6">
+                        <li><a href="aboutUs.html" class="text-lg md:text-xl text-[#D9D9D9] hover:text-yellow-400">About us</a></li>
+                        <li><a href="./src/pages/contactMe.html" class="text-lg md:text-xl text-[#D9D9D9] hover:text-yellow-400">Contact us</a></li>
+                        <li><a href="#" class="text-lg md:text-xl text-[#D9D9D9] hover:text-yellow-400">Support</a></li>
+                        <li><a href="#" class="text-lg md:text-xl text-[#D9D9D9] hover:text-yellow-400">Careers</a></li>
+                        <li><a href="./src/pages/feedback.html" class="text-lg md:text-xl text-[#D9D9D9] hover:text-yellow-400">Feedback</a></li>
                     </ul>
                 </div>
-                <div class="flex flex-col text-[#D9D9D9] gap-8">
-                    <h4 class="font-bold">Quick Link</h4>
-                    <ul class="flex flex-col gap-8">
-                        <li><a href="http://" class="hover:text-yellow-400">Share Location</a></li>
-                        <li><a href="http://" class="hover:text-yellow-400">Orders Tracking</a></li>
-                        <li><a href="http://" class="hover:text-yellow-400">Size Guide</a></li>
-                        <li><a href="http://" class="hover:text-yellow-400">FAQs</a></li>
+
+                <!-- Quick Links -->
+                <div class="flex flex-col gap-7">
+                    <h4 class="text-xl md:text-2xl font-bold">Quick Link</h4>
+                    <ul class="flex flex-col gap-6">
+                        <li><a href="#" class="text-lg md:text-xl text-[#D9D9D9] hover:text-yellow-400">Share Location</a></li>
+                        <li><a href="#" class="text-lg md:text-xl text-[#D9D9D9] hover:text-yellow-400">Orders Tracking</a></li>
+                        <li><a href="#" class="text-lg md:text-xl text-[#D9D9D9] hover:text-yellow-400">Size Guide</a></li>
+                        <li><a href="#" class="text-lg md:text-xl text-[#D9D9D9] hover:text-yellow-400">FAQs</a></li>
                     </ul>
                 </div>
-                <div class="flex flex-col text-[#D9D9D9] gap-8">
-                    <h4 class="font-bold">Legal</h4>
-                    <ul class="flex flex-col gap-8">
-                        <li><a href="http://" class="hover:text-yellow-400 !important">Terms & conditions</a></li>
-                        <li><a href="http://" class="hover:text-yellow-400 !important">Privacy Policy</a></li>
+
+                <!-- Legal Links -->
+                <div class="flex flex-col gap-7">
+                    <h4 class="text-xl md:text-2xl font-bold">Legal</h4>
+                    <ul class="flex flex-col gap-6">
+                        <li><a href="#" class="text-lg md:text-xl text-[#D9D9D9] hover:text-yellow-400">Terms & conditions</a></li>
+                        <li><a href="#" class="text-lg md:text-xl text-[#D9D9D9] hover:text-yellow-400">Privacy Policy</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="w-full flex justify-center item-center p-10 ">
-            <p class='text-sm sm:text-base md:text-base lg:text-lg text-[#EBD96B]'>&copy; <span
-                    id="copyright-year"></span>
-                <a href='/index.html'>Style Cart&trade;</a> || All Rights Reserved.
+
+        <!-- Bottom Section -->
+        <div class="w-full flex justify-center items-center py-6">
+            <p class="text-sm sm:text-base md:text-lg text-[#EBD96B] text-center">
+                &copy; <span id="copyright-year"></span>
+                <a href="/index.html" class="hover:text-yellow-400">Style Cart&trade;</a> || All Rights Reserved.
             </p>
         </div>
-    </footer>
+    </div>
+</footer>
     <button id="scrollToTopBtn" onclick="scrollToTop()">⬆</button>
     <script src="./src/js/index.js"></script>
     <script src="./src/js/copyrightYear.js"></script>

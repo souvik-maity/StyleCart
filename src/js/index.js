@@ -1,3 +1,12 @@
+
+import gsap from "gsap";
+
+gsap.from(".animate", {
+  scrollTrigger: ".animate",
+  opacity: 0,
+  y: 50,
+  duration: 1,
+});
 const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('mobile-nav');
 
