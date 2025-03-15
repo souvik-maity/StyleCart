@@ -1,3 +1,4 @@
+
 const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('mobile-nav');
 
