@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signup | Style Cart</title>
+    <link rel="stylesheet" href="../css/pages/login.css">
+</head>
+
+<body>
+
+    <!-- Form Container -->
+    <div class="form-container">
+        <div class="tabs">
+            <button id="loginTab" class="tab active">Login</button>
+            <button id="signupTab" class="tab">Sign Up</button>
+        </div>
+
+        <!-- Login Form -->
+        <form id="loginForm">
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Password</label>
+            <input type="password" placeholder="Enter your password" required>
+
+            <button class="btn">Login</button>
+            <p>Don't have an account? <span onclick="switchToSignup()">Sign Up</span></p>
+        </form>
+
+        <!-- Signup Form -->
+        <form id="signupForm" class="hidden">
+            <label>Username</label>
+            <input type="text" placeholder="Enter your username" required>
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Password</label>
+            <input type="password" placeholder="Create a password" required>
+
+            <button class="btn">Sign Up</button>
+            <p>Already have an account? <span onclick="switchToLogin()">Login</span></p>
+        </form>
+    </div>
+
+    <script src="../js/pages/login.js"></script>
+</body>
+
+</html>

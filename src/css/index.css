@@ -1,0 +1,134 @@
+.toggle {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease-in-out;
+}
+
+.icon {
+    position: absolute;
+    font-size: 1.5rem;
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+.sun {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.moon {
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.dark-mode .sun {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.dark-mode .moon {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.swiper {
+    margin-top: 6rem;
+}
+
+.swiper-pagination {
+    display: none !important;
+}
+
+.mark {
+    position: absolute;
+    bottom: 0%;
+    left: 12%;
+    z-index: -20;
+}
+
+/* Scroll to Top Button */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+/* Show Button when Scrolled Down */
+#scrollToTopBtn.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Hover Effects */
+#scrollToTopBtn:hover {
+    transform: scale(1.2) rotate(15deg);
+    box-shadow: 0 0 15px rgba(255, 65, 108, 0.8);
+}
+
+/* Floating Animation */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+#scrollToTopBtn.float {
+    animation: float 1.5s infinite ease-in-out;
+}
+
+.banner {
+    padding-block: 4rem;
+    overflow: hidden;
+    background-color: rgb(230 199 68);
+}
+
+.banner__container {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+
+    animation: scroll 20s linear infinite;
+}
+
+.banner__container img {
+    height: 30px;
+}
+
+@keyframes scroll {
+    to {
+        transform: translateX(calc(-50% - 4rem));
+    }
+}

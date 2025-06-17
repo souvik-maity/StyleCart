@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue - Style Cart</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pages/catalogue.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+</head>
+
+<body class="light-mode bg-slate-50 items-center">
+    <nav class="bg-transparent text-black w-full uppercase tracking-[0.22px] md:text-[22px] h-20 py-2">
+        <div class="container mx-auto flex flex-row justify-between items-center">
+            <div>
+                <img id="shopLogo" src="../assets/images/logo-black.png" alt="Shop Logo" srcset="" />
+            </div>
+            <ul class="text-black hidden md:flex flex-row gap-16 justify-end items-center">
+                <li class="relative group hover:scale-105 hover:duration-150">
+                    <a href="catalogue.html" class="custom-button">Catalogue</a>
+                    <span
+                        class="navbar-items-underline absolute left-1/2 bottom-0 h-[2px] w-0 bg-[#23272f] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                </li>
+                <li class="relative group hover:scale-105 hover:duration-150">
+                    <a href="fashion.html" class="custom-button">Fashion</a>
+                    <span
+                        class="navbar-items-underline absolute left-1/2 bottom-0 h-[2px] w-0 bg-[#23272f] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                </li>
+                <li class="relative group hover:scale-105 hover:duration-150">
+                    <a href="favourite.html" class="custom-button ">Favourite</a>
+                    <span
+                        class="navbar-items-underline absolute left-1/2 bottom-0 h-[2px] w-0 bg-[#23272f] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                </li>
+                <li class="relative group hover:scale-105 hover:duration-150">
+                    <a href="lifestyle.html" class="custom-button ">Lifestyle</a>
+                    <span
+                        class="navbar-items-underline absolute left-1/2 bottom-0 h-[2px] w-0 bg-[#23272f] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                </li>
+                <li class="relative group hover:scale-105 hover:duration-150">
+                    <button type="button" id="darkModeToggle" class="toggle hover:scale-125 hover:duration-1000">
+                        <span class="icon sun">☀️</span>
+                        <span class="icon moon">🌙</span>
+                    </button>
+                </li>
+                <li class="relative group hover:scale-105 hover:duration-150">
+                    <a class="bg-black text-[#FFFFF0] rounded-md py-4 px-4" href="login.html">Sign up</a>
+                </li>
+            </ul>
+            <div class="md:hidden">
+                <div class="space-y-1 rotate-180" id="hamburger">
+                    <div class="w-6 h-0.5 transition-all bg-black"></div>
+                    <div class="w-6 h-0.5 transition-all bg-black"></div>
+                    <div class="w-6 h-0.5 transition-all bg-black"></div>
+                </div>
+                <ul class="text-white flex flex-col justify-start gap-5 h-screen absolute top-0 left-0 bg-primary p-10 items-start -translate-x-full transition-all z-40"
+                    id="mobile-nav">
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="fashion.html">Fashion</a></li>
+                    <li><a href="favourite.html">Favourite</a></li>
+                    <li><a href="lifestyle.html">Lifestyle</a></li>
+                    <li>
+                        <button type="button" id="modeSwitch" class="mode-changer">
+                            Dark Mode
+                        </button>
+                    </li>
+                    <li class="mt-4 -ml-1">
+                        <a class="bg-black text-[#FFFFF0] rounded-md py-2 px-3" href="login.html">Sign
+                            up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="container">
+            <h1>Style Cart Catalogue</h1>
+            <div>
+                <button class="filter-btn" data-category="all">All</button>
+                <button class="filter-btn" data-category="men">Men</button>
+                <button class="filter-btn" data-category="women">Women</button>
+                <button class="filter-btn" data-category="kids">Kids</button>
+            </div>
+        </div>
+
+        <section class="catalogue">
+            <div class="category men" data-category="men">
+                <h2>Men's Collection</h2>
+                <div class="items">
+                    <div class="dress-card">
+                        <img src="../assets/images/men-casual.avif" alt="Men Casual Wear">
+                        <p>Casual Wear</p>
+                    </div>
+                    <div class="dress-card">
+                        <img src="../assets/images/men-formal.jpg" alt="Men Formal Wear">
+                        <p>Formal Wear</p>
+                    </div>
+                    <div class="dress-card">
+                        <img src="../assets/images/men-ethnic.webp" alt="Men Ethnic Wear">
+                        <p>Ethnic Wear</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category women" data-category="women">
+                <h2>Women's Collection</h2>
+                <div class="items">
+                    <div class="dress-card">
+                        <img src="../assets/images/women-western.webp" alt="Women's Dress">
+                        <p>Western Dress</p>
+                    </div>
+                    <div class="dress-card">
+                        <img src="../assets/images/women-saree.webp" alt="Women's Saree">
+                        <p>Traditional Saree</p>
+                    </div>
+                    <div class="dress-card">
+                        <img src="../assets/images/women-ethnic.avif" alt="Women's Ethnic Wear">
+                        <p>Ethnic Wear</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category kids" data-category="kids">
+                <h2>Kids' Collection</h2>
+                <div class="items">
+                    <div class="dress-card">
+                        <img src="../assets/images/kids-casual.webp" alt="Kids Casual Wear">
+                        <p>Casual Wear</p>
+                    </div>
+                    <div class="dress-card">
+                        <img src="../assets/images/kids-party.jpg" alt="Kids Party Wear">
+                        <p>Party Wear</p>
+                    </div>
+                    <div class="dress-card">
+                        <img src="../assets/images/kids-sports.avif" alt="Kids Sports Wear">
+                        <p>Sports Wear</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/pages/catalogue.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js" defer></script>
+</body>
+
+</html>
