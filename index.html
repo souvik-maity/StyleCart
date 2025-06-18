@@ -335,76 +335,87 @@
             </div>
         </form>
     </section>
-    <footer class="w-full bg-black ">
-        <div
-            class="  text-white flex py-[80px] flex-col gap-24 px-14 md:items-center md:gap-[415px] md:flex-row md:justify-between md:px-[100px]">
-            <div class="flex flex-col items-start gap-8">
-                <div>
-                    <img src="./src/assets/images/FASHION.png" />
+    <footer class="w-full bg-black border-t border-gray-800">
+    <!-- Main Footer Content -->
+    <div class="container mx-auto px-6 md:px-12 lg:px-16 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+            
+            <!-- Brand Section -->
+            <div class="lg:col-span-1 space-y-6">
+                <div class="flex items-center">
+                    <img src="./src/assets/images/FASHION.png" alt="Fashion Logo" />
                 </div>
-                <div>
-                    <p class="text-xl text-[#8E8E8E] md:text-2xl font-normal">
-                        Complete your style with awesome <br /> clothes from us.
-                    </p>
+                <p class="text-lg text-gray-400 leading-relaxed">
+                    Complete your style with awesome <br /> clothes from us.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors duration-300" aria-label="Facebook">
+                        <img src="./src/assets/images/fb.svg" alt="Facebook" class="w-6 h-6" />
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors duration-300" aria-label="Instagram">
+                        <img src="./src/assets/images/insta.svg" alt="Instagram" class="w-6 h-6" />
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors duration-300" aria-label="Twitter">
+                        <img src="./src/assets/images/twitter.svg" alt="Twitter" class="w-6 h-6" />
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors duration-300" aria-label="LinkedIn">
+                        <img src="./src/assets/images/linkedin.png" alt="LinkedIn" class="w-6 h-6" />
+                    </a>
                 </div>
-                <ul class="flex flex-row gap-[14px]">
-                    <li>
-                        <a href="#"><img src="./src/assets/images/fb.svg" alt="" srcset="" /></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="./src/assets/images/insta.svg" alt="" srcset="" /></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="./src/assets/images/twitter.svg" alt="" srcset="" /></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="./src/assets/images/linkedin.png" alt="" srcset="" /></a>
-                    </li>
+            </div>
+            
+            <!-- Company Section -->
+            <div class="space-y-6">
+                <h4 class="text-xl font-semibold text-white border-b border-gray-700 pb-2">Company</h4>
+                <ul class="space-y-3">
+                    <li><a href="aboutUs.html" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300">About Us</a></li>
+                    <li><a href="./src/pages/contactMe.html" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300">Contact Us</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300">Support</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300">Careers</a></li>
+                    <li><a href="./src/pages/feedback.html" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300">Feedback</a></li>
                 </ul>
             </div>
-            <div class="flex flex-col gap-[50px] md:gap-[188px] md:flex-row">
-                <div class="flex flex-col text-[#D9D9D9] gap-8">
-                    <h4 class="font-bold">Company</h4>
-                    <ul class="flex flex-col gap-8">
-
-                        <li><a href="aboutUs.html" class="hover:text-yellow-400">About us</a></li>
-                        <li><a href="./src/pages/contactMe.html" class="hover:text-yellow-400">Contact us</a></li>
-                        <li><a href="http://" class="hover:text-yellow-400">Support</a></li>
-                        <li><a href="http://" class="hover:text-yellow-400">Carrers</a></li>
-                        <li><a href="././src/pages/feedback.html" class="hover:text-yellow-400">Feedback</a></li>
-
-<!--                         <li><a href="http://" class="hover:text-yellow-400">About us</a></li>
-                        <li><a href="./src/pages/contactMe.html" class="hover:text-yellow-400">Contact us</a></li>
-                        <li><a href="http://" class="hover:text-yellow-400">Support</a></li>
-                        <li><a href="http://" class="hover:text-yellow-400">Carrers</a></li>
- -->
-                    </ul>
-                </div>
-                <div class="flex flex-col text-[#D9D9D9] gap-8">
-                    <h4 class="font-bold">Quick Link</h4>
-                    <ul class="flex flex-col gap-8">
-                        <li><a href="http://" class="hover:text-yellow-400">Share Location</a></li>
-                        <li><a href="http://" class="hover:text-yellow-400">Orders Tracking</a></li>
-                        <li><a href="http://" class="hover:text-yellow-400">Size Guide</a></li>
-                        <li><a href="http://" class="hover:text-yellow-400">FAQs</a></li>
-                    </ul>
-                </div>
-                <div class="flex flex-col text-[#D9D9D9] gap-8">
-                    <h4 class="font-bold">Legal</h4>
-                    <ul class="flex flex-col gap-8">
-                        <li><a href="http://" class="hover:text-yellow-400 !important">Terms & conditions</a></li>
-                        <li><a href="http://" class="hover:text-yellow-400 !important">Privacy Policy</a></li>
-                    </ul>
-                </div>
+            
+            <!-- Quick Links Section -->
+            <div class="space-y-6">
+                <h4 class="text-xl font-semibold text-white border-b border-gray-700 pb-2">Quick Links</h4>
+                <ul class="space-y-3">
+                    <li><a href="#" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300">Share Location</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300">Order Tracking</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300">Size Guide</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300">FAQs</a></li>
+                </ul>
+            </div>
+            
+            <!-- Legal Section -->
+            <div class="space-y-6">
+                <h4 class="text-xl font-semibold text-white border-b border-gray-700 pb-2">Legal</h4>
+                <ul class="space-y-3">
+                    <li><a href="#" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300 font-medium">Terms & Conditions</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300 font-medium">Privacy Policy</a></li>
+                </ul>
             </div>
         </div>
-        <div class="w-full flex justify-center item-center p-10 ">
-            <p class='text-sm sm:text-base md:text-base lg:text-lg text-[#EBD96B]'>&copy; <span
-                    id="copyright-year"></span>
-                <a href='/index.html'>Style Cart&trade;</a> || All Rights Reserved.
-            </p>
+    </div>
+    
+    <!-- Copyright Section -->
+    <div class="border-t border-gray-800 bg-gray-900">
+        <div class="container mx-auto px-6 md:px-12 lg:px-16 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                <p class="text-sm md:text-base text-yellow-400">
+                    &copy; <span id="copyright-year">2024</span> 
+                    <a href="/index.html" class="font-semibold hover:text-yellow-300 transition-colors duration-300">Style Cart&trade;</a>
+                </p>
+                <p class="text-sm text-gray-400">All Rights Reserved.</p>
+            </div>
         </div>
-    </footer>
+    </div>
+</footer>
+
+<script>
+    // Auto-update copyright year
+    document.getElementById('copyright-year').textContent = new Date().getFullYear();
+</script>
     <button id="scrollToTopBtn" onclick="scrollToTop()">⬆</button>
     <script src="./src/js/index.js"></script>
     <script src="./src/js/copyrightYear.js"></script>
