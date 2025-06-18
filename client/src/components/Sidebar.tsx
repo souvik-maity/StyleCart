@@ -1,6 +1,5 @@
 import React from "react";
 import "./Sidebar.css";
-import logo from "../assets/logo.png";
 
 interface SidebarProps {
   open: boolean;
@@ -13,7 +12,6 @@ const Sidebar: React.FC<SidebarProps> = ({ open, onClose }) => (
       &times;
     </button>
     <div className="sidebar-logo">
-      <img src={logo} alt="StyleCart Logo" />
       <span className="sidebar-brand">StyleCart</span>
     </div>
     <nav className="sidebar-nav">
