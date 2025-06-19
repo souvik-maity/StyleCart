@@ -1,14 +1,15 @@
-# 🌟 **Style Cart**
+# 🌟 **StyleCart**
 
-**StyleCart** is an open-source **eCommerce clothing website** designed to evolve into a fully interactive platform powered by **React.js**, with a **lightweight backend** using **Node.js and Express.js**. Currently, it features a modern, responsive UI built with **HTML and Tailwind CSS**, with plans to enhance interactivity and scalability through React.
-<br>
-<br>
+**StyleCart** is an open-source **eCommerce clothing platform** built with a responsive frontend using **React.js** and **Tailwind CSS**, and structured for future backend integration using **Node.js** and **Express.js**.
+This repository is organized to support modular development, easy scalability, and collaboration.
+
+---
 
 <table align="center">
     <thead align="center">
         <tr border: 2px;>
             <td><b>🌟 Stars</b></td>
-            <td><b>🍴 Forks</b></td>
+            <td><b>🍽️ Forks</b></td>
             <td><b>🐛 Issues</b></td>
             <td><b>🔔 Open PRs</b></td>
             <td><b>🔕 Close PRs</b></td>
@@ -25,109 +26,127 @@
     </tbody>
 </table>
 
-<br>
-<br>
-<span align="center">
-  
-![Macbook-Air-127 0 0 1 (1)](https://github.com/user-attachments/assets/7f660f09-f9d9-41bf-bfbf-01aa2730ebd8)
+---
 
-</span>
+![Preview](https://github.com/user-attachments/assets/7f660f09-f9d9-41bf-bfbf-01aa2730ebd8)
 
+---
 
-<!--line-->
-<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
+## 🧱 Project Structure
 
-## 🚀 **Features**
+```
+StyleCart/
+🔽️ .github/          # GitHub workflows and issue templates
+🔽️ client/           # React + TypeScript frontend code
+🔽️ README.md         # Main project README (this file)
+```
 
-✅ **Fully responsive UI** powered by Tailwind CSS for a seamless experience across devices  
-🛒 **Product listing** with categories and filtering options  
-❤️ **Shopping cart and wishlist** (frontend-only for now, backend coming soon)  
-⚡ **Modern and dynamic styling** for an engaging shopping experience  
-🔜 **Upcoming Features:** API integration, dynamic product pages, and a minimal backend for essential operations  
+> A backend folder may be added later for Node.js/Express.js integration.
 
-<!--line-->
-<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
+---
 
-## 📂 **Installation & Setup**
+## 🚀 Features
 
-### **1️⃣ Clone the repository**
+📅 Responsive UI with Tailwind CSS
+🛒 Product listing and shopping cart UI
+📱 Mobile-friendly and elegant layout
+🔧 React Router & API-ready structure planned
+🧪 Easy setup for contributors and developers
 
-```sh
+---
+
+## 📂 Installation & Setup
+
+### 1️⃣ Clone the repository
+
+```bash
 git clone https://github.com/souvik-maity/StyleCart.git
 cd StyleCart
 ```
 
-### **2️⃣ Run the frontend (current setup)**
+### 2️⃣ Navigate to the client folder
 
-- Open the `index.html` file directly in a browser.
-- Alternatively, use a **Live Server extension** for a better development experience.
+```bash
+cd client
+```
 
-<!--line-->
-<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
+### 3️⃣ Install dependencies
 
-## 🎮 **How to Use**
+```bash
+npm install
+```
 
-🛍️ **Browse** through a variety of clothing items.  
-❤️ **Add products** to the wishlist or cart (frontend-only for now).  
-🎨 **Enjoy** a fully responsive and visually appealing UI powered by Tailwind CSS.  
+### 4️⃣ Start the development server
 
-<!--line-->
-<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
+```bash
+npm start
+```
 
-## 🏗️ **Contributing**
+> The app should now be running at `http://localhost:3000`
 
-We welcome contributions to improve **StyleCart**! Follow these steps to contribute:
+---
 
-### **1️⃣ Fork the repository**
+## 🎮 How to Use
 
-```sh
+🛓️ Browse products, explore categories, and simulate adding to cart/wishlist
+⚡️ Experience a smooth and animated interface
+🚧 Backend functionalities are under development
+
+---
+
+## 🏗️ Contributing
+
+We welcome contributions to enhance **StyleCart**! Follow these steps:
+
+### 1️⃣ Fork the repository
+
+```bash
 git fork https://github.com/souvik-maity/StyleCart.git
 ```
 
-### **2️⃣ Create a new branch**
+### 2️⃣ Create a new branch
 
-```sh
+```bash
 git checkout -b feature-branch
 ```
 
-### **3️⃣ Make your changes and commit**
+### 3️⃣ Make your changes and commit
 
-```sh
+```bash
 git commit -m "Add new feature"
 ```
 
-### **4️⃣ Push the changes to your fork**
+### 4️⃣ Push your changes
 
-```sh
+```bash
 git push origin feature-branch
 ```
 
-### **5️⃣ Open a Pull Request (PR) on GitHub**
+### 5️⃣ Open a Pull Request on GitHub
 
-<!--line-->
-<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
+We’ll review your PR and merge it after approval! 🚀
 
-## 📝 **Code Guidelines**
+---
 
-✅ Follow **best practices** for React component structure and state management.  
-🎨 Use **Tailwind CSS** effectively for styling.  
-🌍 Ensure **cross-browser compatibility** for a consistent experience.  
-🔹 Keep the **API lightweight and RESTful** for backend contributions.  
+## 📁 Code Guidelines
 
-<!--line-->
-<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
+* Use modular, reusable React components
+* Stick to **functional components** and **hooks**
+* Prefer **TypeScript** types/interfaces where possible
+* Follow Tailwind CSS utility-first styling
+* Structure routes and APIs cleanly
+
+---
 
 ## ✨ Contributors
 
-All Thanks to our contributors 💙
-
+Thanks to these amazing folks for making this project better 💙
 
 [![GitHub Contributors](https://contrib.rocks/image?repo=souvik-maity/StyleCart)](https://github.com/souvik-maity/StyleCart/graphs/contributors)
 
-<!--line-->
-<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
+---
 
-## Stargazers ❤️
+## 🌟 Stargazers
 
 <div align='left'>
 
@@ -135,23 +154,18 @@ All Thanks to our contributors 💙
 
 </div>
 
+---
 
-<!--line-->
-<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
-
-## Forkers ❤️
+## 🍜 Forkers
 
 [![Forkers repo roster for @souvik-maity/StyleCart](https://reporoster.com/forks/souvik-maity/StyleCart)](https://github.com/souvik-maity/StyleCart/network/members)
 
+---
 
-<!--line-->
-<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
+## 📬 Get in Touch
 
+Have questions, feedback, or suggestions?
 
-## 📬 **Get in Touch**
+🔗 **GitHub**: [StyleCart Repository](https://github.com/souvik-maity/StyleCart)
 
-For queries or suggestions, feel free to reach out:
-
-🔗 **GitHub**: [StyleCart Repository](https://github.com/souvik-maity/StyleCart)  
-
-Let's build something amazing together! 🚀
+Let’s build something amazing together! 🚀
