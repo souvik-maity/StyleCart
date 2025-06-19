@@ -1,54 +1,94 @@
-# StyleCart Frontend
+# 📝 StyleCart Client - React Frontend
 
-This is the frontend application for StyleCart, built using React and TypeScript. The application serves as an online shopping platform where users can browse and purchase various products.
+This is the **React + TypeScript frontend** of the StyleCart project. It is structured using reusable components and styled with **Tailwind CSS** to provide a fully responsive shopping experience.
 
-## Project Structure
+---
 
-The project is organized as follows:
+## 🚀 Tech Stack
 
+* ⚛️ React.js
+* 💬 TypeScript
+* 🎨 Tailwind CSS
+* 🧭 React Router DOM (planned)
+* 🌐 API integration (upcoming)
+
+---
+
+## 📁 Folder Structure
+
+```bash
+client/
+├── public/               # Static files like index.html, favicon
+│   └── index.html
+├── src/                  # Source code
+│   ├── assets/           # Static assets (images, logos)
+│   ├── components/       # React components (HeroSection, Sidebar, etc.)
+│   ├── App.tsx           # Main app component
+│   ├── App.css           # App-level styles
+│   ├── index.tsx         # App entry point
+│   └── index.css         # Global styles
+├── package.json          # Project dependencies
+├── tsconfig.json         # TypeScript config
+└── README.md             # This file
 ```
-stylecart-frontend
-├── public
-│   ├── index.html        # Main HTML template
-│   └── favicon.ico       # Favicon for the application
-├── src
-│   ├── App.tsx           # Main application component
-│   ├── index.tsx         # Entry point of the application
-│   ├── components
-│   │   └── Navbar.tsx    # Navbar component displaying title and logo
-│   └── assets
-│       └── logo.svg      # Logo image used in the Navbar
-├── package.json           # npm configuration file
-├── tsconfig.json          # TypeScript configuration file
-└── README.md              # Project documentation
+
+---
+
+## 🔧 Getting Started
+
+### 1️⃣ Install Dependencies
+
+```bash
+npm install
 ```
 
-## Getting Started
+### 2️⃣ Run Development Server
 
-To get started with the project, follow these steps:
+```bash
+npm start
+```
 
-1. **Clone the repository:**
-   ```
-   git clone <repository-url>
-   cd stylecart-frontend
-   ```
+The app will run at: `http://localhost:3000`
 
-2. **Install dependencies:**
-   ```
-   npm install
-   ```
+> Ensure Node.js and npm are installed on your system before running the above commands.
 
-3. **Run the application:**
-   ```
-   npm start
-   ```
+---
 
-   The application will be available at `http://localhost:3000`.
+## 🧪 Available Scripts
 
-## Contributing
+In the project directory, you can run:
 
-If you would like to contribute to the project, please create a new branch for your feature or bug fix and submit a pull request.
+```bash
+npm start        # Runs the app in development mode
+npm run build    # Builds the app for production
+npm test         # Launches the test runner (if available)
+```
 
-## License
+---
 
-This project is licensed under the MIT License. See the LICENSE file for more details.
+## 🔄 Planned Features
+
+* 📦 React Router DOM integration with centralized route file
+* 🌐 API service class for easier web API calls
+* 🗂 Product page with real-time data rendering
+* 🔐 User authentication (in future phase)
+
+---
+
+## 🧑‍💻 Contributing
+
+We welcome contributions to the client app!
+
+1. Fork the repository
+2. Create a new branch: `git checkout -b my-feature`
+3. Make your changes and commit: `git commit -m "Add feature"`
+4. Push the branch: `git push origin my-feature`
+5. Open a Pull Request
+
+---
+
+## 📬 Contact
+
+For any queries, please reach out via the [main repository](https://github.com/souvik-maity/StyleCart).
+
+Let's make StyleCart better together! 🚀
