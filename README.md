@@ -169,3 +169,12 @@ Have questions, feedback, or suggestions?
 🔗 **GitHub**: [StyleCart Repository](https://github.com/souvik-maity/StyleCart)
 
 Let’s build something amazing together! 🚀
+
+---
+
+### 📄 License
+
+This project is licensed under the **MIT License** – see the [LICENSE](./LICENSE) file for details.
+
+---
+
