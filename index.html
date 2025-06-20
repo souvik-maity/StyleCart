@@ -28,8 +28,7 @@
     <nav class="bg-transparent text-black w-full uppercase tracking-[0.22px] md:text-[22px] h-3 py-2 px-10">
         <div class="container mx-auto flex flex-row justify-between items-center">
             <div>
-                <!-- Critical image - keep eager loading -->
-                <img id="shopLogo" src="./src/assets/images/logo-black.png" alt="Shop Logo" loading="eager" />
+                <img id="shopLogo" src="./src/assets/images/logo-black.png" alt="Shop Logo" srcset="" />
             </div>
             <ul class="text-black hidden md:flex flex-row gap-16 justify-end items-center">
                 <li class="relative group hover:scale-105 hover:duration-150">
@@ -93,7 +92,7 @@
         <div class="flex flex-col items-start text-black md:pb-[68px] z-10">
             <h1 class="text-4xl font-black leading-[125%] sm:text-5xl md:text-[96px] md:leading-[125%]">
                 <span
-                    class="relative after:w-[120%] after:h-full after:bg-white after:block after:absolute after:-z-10 after:top-0 after:-rotate-2">LET'S</span>
+                    class="relative after:w-[120%] after:h-full after:bg-white after:block after:absolute after:-z-10 after:top-0 after:-rotate-2">LET’S</span>
                 <br />
                 EXPLORE <br />
                 <span
@@ -106,8 +105,7 @@
             </p>
             <div class="flex flex-col md:flex-row md:items-center justify-evenly gap-9 pt-8">
                 <div class="w-1/2 h-1/2">
-                    <!-- Below-the-fold image - lazy load -->
-                    <img class="" src="./src/assets/images/banner-image-2.png" alt="banner image" loading="lazy" />
+                    <img class="" src="./src/assets/images/banner-image-2.png" alt="banner image" srcset="" />
                 </div>
                      <a href="#" class="bg-black text-white rounded-md py-4 px-4 text-center transition-all duration-300 ease-in-out 
                      hover:text-yellow-400 hover:bg-black hover:scale-105 hover:shadow-xl hover:[text-shadow:_0_0_8px_rgb(250,204,21)]">
@@ -117,20 +115,18 @@
         
                 </div>
         <div class="">
-            <!-- Hero image - keep eager loading as it's likely above the fold -->
-            <img class="w-full" src="./src/assets/images/banner-image.png" alt="banner image" loading="eager" />
+            <img class="w-full" src="./src/assets/images/banner-image.png" alt="banner image" />
         </div>
     </section>
     <section class="banner">
         <div class="banner__container">
-            <!-- Brand logos - lazy load as they're not critical -->
-            <img src="./src/assets/images/amazon.png" alt="amazon logo" loading="lazy" />
-            <img src="./src/assets/images/lacoste.png" alt="lacoste logo" loading="lazy" />
-            <img src="./src/assets/images/levis.png" alt="levis logo" loading="lazy" />
-            <img src="./src/assets/images/shopify.png" alt="shopify logo" loading="lazy" />
-            <img src="./src/assets/images/obey.png" alt="obey logo" loading="lazy" />
-            <img src="./src/assets/images/hm.png" alt="hm logo" loading="lazy" />
-            <img src="./src/assets/images/FASHION.png" alt="fashion logo" loading="lazy" />
+            <img src="./src/assets/images/amazon.png" alt="banner" />
+            <img src="./src/assets/images/lacoste.png" alt="banner" />
+            <img src="./src/assets/images/levis.png" alt="banner" />
+            <img src="./src/assets/images/shopify.png" alt="banner" />
+            <img src="./src/assets/images/obey.png" alt="banner" />
+            <img src="./src/assets/images/hm.png" alt="banner" />
+            <img src="./src/assets/images/FASHION.png" alt="banner" />
         </div>
     </section>
 
@@ -138,8 +134,7 @@
         <div class="relative text-black">
             <h2 class="text-4xl font-black md:text-5xl z-20">
                 NEW ARRIVALS</h2>
-            <!-- Decorative image - lazy load -->
-            <img class="mark" src="./src/assets/images/banner-image-2.png" alt="decorative image" loading="lazy" />
+            <img class="mark" src="./src/assets/images/banner-image-2.png" alt="img" />
         </div>
 
         <div class="swiper mySwiper mt-10 ">
@@ -148,7 +143,7 @@
                 <div class="swiper-slide  flex flex-col w-full gap-7 group">
                     <div class="h-[500px] w-full overflow-hidden rounded-[20px] ">
                         <img class="w-full h-full object-cover object-[80%]  group-hover:scale-110 transition ease-in-out duration-300"
-                            src="./src/assets/images/hoddiee.png" alt="hoodie product" loading="lazy" />
+                            src="./src/assets/images/hoddiee.png" alt="img" />
                     </div>
 
                     <div class="flex flex-row justify-between items-center">
@@ -157,7 +152,7 @@
                             <a class="text-2xl text-[#7F7F7F]" href="#">Explore Now!</a>
                         </div>
                         <div>
-                            <img src="./src/assets/images/arrow.png" alt="arrow icon" loading="lazy" />
+                            <img src="./src/assets/images/arrow.png" alt="" srcset="">
                         </div>
                     </div>
                 </div>
@@ -166,7 +161,7 @@
                 <div class="swiper-slide flex flex-col w-full gap-7 group">
                     <div class="h-[500px] w-full overflow-hidden rounded-[20px] ">
                         <img class="w-full h-[704px] object-cover object-[34%] rounded-[20px] group-hover:scale-110 transition ease-in-out duration-300"
-                            src="./src/assets/images/coats.png" alt="coat product" loading="lazy" />
+                            src="./src/assets/images/coats.png" alt="img" />
                     </div>
                     <div class="flex flex-row justify-between items-center">
                         <div class="flex flex-col">
@@ -174,7 +169,7 @@
                             <a class="text-2xl text-[#7F7F7F]" href="#">Explore Now!</a>
                         </div>
                         <div>
-                            <img src="./src/assets/images/arrow.png" alt="arrow icon" loading="lazy" />
+                            <img src="./src/assets/images/arrow.png" alt="" srcset="">
                         </div>
                     </div>
                 </div>
@@ -183,7 +178,7 @@
                 <div class="swiper-slide flex flex-col w-full gap-7 group">
                     <div class="h-[500px] w-full overflow-hidden rounded-[20px] ">
                         <img class="w-full h-full object-cover object-[47%] rounded-[20px] group-hover:scale-110 transition ease-in-out duration-300"
-                            src="./src/assets/images/T-shirts.png" alt="t-shirt product" loading="lazy" />
+                            src="./src/assets/images/T-shirts.png" alt="img" />
                     </div>
 
                     <div class="flex flex-row justify-between items-center">
@@ -192,7 +187,7 @@
                             <a class="text-2xl text-[#7F7F7F]" href="#">Explore Now!</a>
                         </div>
                         <div>
-                            <img src="./src/assets/images/arrow.png" alt="arrow icon" loading="lazy" />
+                            <img src="./src/assets/images/arrow.png" alt="" srcset="">
                         </div>
                     </div>
                 </div>
@@ -201,7 +196,7 @@
                 <div class="swiper-slide flex flex-col w-full gap-7 group">
                     <div class="h-[500px] w-full overflow-hidden rounded-[20px] ">
                         <img class="w-full h-full object-cover object-[34%] rounded-[20px] group-hover:scale-110 transition ease-in-out duration-300"
-                            src="./src/assets/images/fav-1.png" alt="fashion product" loading="lazy" />
+                            src="./src/assets/images/fav-1.png" alt="img" />
                     </div>
                     <div class="flex flex-row justify-between items-center">
                         <div class="flex flex-col">
@@ -209,7 +204,7 @@
                             <a class="text-2xl text-[#7F7F7F]" href="#">Explore Now!</a>
                         </div>
                         <div>
-                            <img src="./src/assets/images/arrow.png" alt="arrow icon" loading="lazy" />
+                            <img src="./src/assets/images/arrow.png" alt="" srcset="">
                         </div>
                     </div>
                 </div>
@@ -218,7 +213,7 @@
                 <div class="swiper-slide flex flex-col w-full gap-7 group">
                     <div class="h-[500px] w-full overflow-hidden rounded-[20px] ">
                         <img class="w-full h-full object-cover object-[34%] rounded-[20px] group-hover:scale-110 transition ease-in-out duration-300"
-                            src="./src/assets/images/coats.png" alt="coat product" loading="lazy" />
+                            src="./src/assets/images/coats.png" alt="img" />
                     </div>
                     <div class="flex flex-row justify-between items-center">
                         <div class="flex flex-col">
@@ -226,7 +221,7 @@
                             <a class="text-2xl text-[#7F7F7F]" href="#">Explore Now!</a>
                         </div>
                         <div>
-                            <img src="./src/assets/images/arrow.png" alt="arrow icon" loading="lazy" />
+                            <img src="./src/assets/images/arrow.png" alt="" srcset="">
                         </div>
                     </div>
                 </div>
@@ -235,7 +230,7 @@
                 <div class="swiper-slide flex flex-col w-full gap-7 group">
                     <div class="h-[500px] w-full overflow-hidden rounded-[20px] ">
                         <img class="w-full h-full object-cover object-[34%] rounded-[20px] group-hover:scale-110 transition ease-in-out duration-300"
-                            src="./src/assets/images/fav-2.png" alt="fashion product" loading="lazy" />
+                            src="./src/assets/images/fav-2.png" alt="img" />
                     </div>
                     <div class="flex flex-row justify-between items-center">
                         <div class="flex flex-col">
@@ -243,7 +238,7 @@
                             <a class="text-2xl text-[#7F7F7F]" href="#">Explore Now!</a>
                         </div>
                         <div>
-                            <img src="./src/assets/images/arrow.png" alt="arrow icon" loading="lazy" />
+                            <img src="./src/assets/images/arrow.png" alt="" srcset="">
                         </div>
                     </div>
                 </div>
@@ -263,14 +258,14 @@
         <div class="relative text-black">
             <h2
                 class="text-4xl font-black after:content-oval after:absolute after:left-[50%] after:-bottom-2.5 after:-z-10 md:text-5xl">
-                Young's Favourite
+                Young’s Favourite
             </h2>
         </div>
         <div class="grid grid-flow-row grid-row-1 gap-12 md:grid-flow-col md:grid-cols-2 ">
             <div class="flex flex-col gap-7 group">
                 <div class="w-full h-[500px] rounded-[20px] overflow-hidden">
                     <img class="w-full h-full object-cover object-[25%] rounded-[20px]  group-hover:scale-110 transition ease-in-out duration-300"
-                        src="./src/assets/images/fav-1.png" alt="trending fashion" loading="lazy" />
+                        src="./src/assets/images/fav-1.png" />
                 </div>
                 <div class="flex flex-row justify-between items-center">
                     <div class="flex flex-col">
@@ -280,7 +275,7 @@
                         <a class="text-2xl text-[#7F7F7F]" href="#">Explore Now!</a>
                     </div>
                     <div>
-                        <img src="./src/assets/images/arrow.png" alt="arrow icon" loading="lazy" />
+                        <img src="./src/assets/images/arrow.png" alt="" srcset="" />
                     </div>
                 </div>
             </div>
@@ -288,7 +283,7 @@
             <div class="flex flex-col gap-7 group">
                 <div class="w-full h-[500px] rounded-[20px] overflow-hidden">
                     <img class="w-full h-full object-cover object-[34%] rounded-[20px] group-hover:scale-110 transition ease-in-out duration-300"
-                        src="./src/assets/images/fav-2.png" alt="affordable fashion" loading="lazy" />
+                        src="./src/assets/images/fav-2.png" />
                 </div>
                 <div class="flex flex-row justify-between items-center">
                     <div class="flex flex-col">
@@ -296,7 +291,7 @@
                         <a class="text-2xl text-[#7F7F7F]" href="#">Explore Now!</a>
                     </div>
                     <div>
-                        <img src="./src/assets/images/arrow.png" alt="arrow icon" loading="lazy" />
+                        <img src="./src/assets/images/arrow.png" alt="" srcset="" />
                     </div>
                 </div>
             </div>
@@ -313,12 +308,12 @@
                 Get 30% off for first transaction using <br /> Rondovision mobile app for now.
             </p>
             <div class="flex flex-col md:flex-row gap-5 mt-16">
-                <img class="w-[204px]" src="./src/assets/images/apple-store.png" alt="app store badge" loading="lazy" />
-                <img class="w-[204px]" src="./src/assets/images/play-store.png" alt="play store badge" loading="lazy" />
+                <img class="w-[204px]" src="./src/assets/images/apple-store.png" alt="" srcset="" />
+                <img class="w-[204px]" src="./src/assets/images/play-store.png" alt="" srcset="" />
             </div>
         </div>
         <div class="flex-1">
-            <img src="./src/assets/images/mobile-app.png" alt="mobile app screenshot" loading="lazy" />
+            <img src="./src/assets/images/mobile-app.png" alt="" />
         </div>
     </section>
     <section class="flex flex-col items-center py-16 bg-primary px-10">
@@ -345,7 +340,7 @@
             class="  text-white flex py-[80px] flex-col gap-24 px-14 md:items-center md:gap-[415px] md:flex-row md:justify-between md:px-[100px]">
             <div class="flex flex-col items-start gap-8">
                 <div>
-                    <img src="./src/assets/images/FASHION.png" alt="fashion logo" loading="lazy" />
+                    <img src="./src/assets/images/FASHION.png" />
                 </div>
                 <div>
                     <p class="text-xl text-[#8E8E8E] md:text-2xl font-normal">
@@ -354,16 +349,16 @@
                 </div>
                 <ul class="flex flex-row gap-[14px]">
                     <li>
-                        <a href="#"><img src="./src/assets/images/fb.svg" alt="facebook" loading="lazy" /></a>
+                        <a href="#"><img src="./src/assets/images/fb.svg" alt="" srcset="" /></a>
                     </li>
                     <li>
-                        <a href="#"><img src="./src/assets/images/insta.svg" alt="instagram" loading="lazy" /></a>
+                        <a href="#"><img src="./src/assets/images/insta.svg" alt="" srcset="" /></a>
                     </li>
                     <li>
-                        <a href="#"><img src="./src/assets/images/twitter.svg" alt="twitter" loading="lazy" /></a>
+                        <a href="#"><img src="./src/assets/images/twitter.svg" alt="" srcset="" /></a>
                     </li>
                     <li>
-                        <a href="#"><img src="./src/assets/images/linkedin.png" alt="linkedin" loading="lazy" /></a>
+                        <a href="#"><img src="./src/assets/images/linkedin.png" alt="" srcset="" /></a>
                     </li>
                 </ul>
             </div>
@@ -371,11 +366,18 @@
                 <div class="flex flex-col text-[#D9D9D9] gap-8">
                     <h4 class="font-bold">Company</h4>
                     <ul class="flex flex-col gap-8">
+
                         <li><a href="aboutUs.html" class="hover:text-yellow-400">About us</a></li>
                         <li><a href="./src/pages/contactMe.html" class="hover:text-yellow-400">Contact us</a></li>
                         <li><a href="http://" class="hover:text-yellow-400">Support</a></li>
                         <li><a href="http://" class="hover:text-yellow-400">Carrers</a></li>
                         <li><a href="././src/pages/feedback.html" class="hover:text-yellow-400">Feedback</a></li>
+
+<!--                         <li><a href="http://" class="hover:text-yellow-400">About us</a></li>
+                        <li><a href="./src/pages/contactMe.html" class="hover:text-yellow-400">Contact us</a></li>
+                        <li><a href="http://" class="hover:text-yellow-400">Support</a></li>
+                        <li><a href="http://" class="hover:text-yellow-400">Carrers</a></li>
+ -->
                     </ul>
                 </div>
                 <div class="flex flex-col text-[#D9D9D9] gap-8">
