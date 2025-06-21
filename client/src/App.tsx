@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Sidebar from "./components/Sidebar";
@@ -40,7 +39,6 @@ import Contact from "./pages/Contact";
 import FAQ from "./pages/FAQ";
 import NotFound from "./pages/NotFound";
 
-
 import type { AppRoute } from "../types/route";
 
 const routeMap: AppRoute[] = [
@@ -80,42 +78,36 @@ const routeMap: AppRoute[] = [
   { path: "*", component: NotFound, allowedRoles: [] },
 ];
 
-const queryClient = new QueryClient();
-
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
-    <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
-        <div className="app-layout">
-          {!sidebarOpen && (
-            <button
-              className="hamburger"
-              onClick={() => setSidebarOpen(true)}
-              aria-label="Open Sidebar"
-            >
-              <span />
-              <span />
-              <span />
-            </button>
-          )}
+    <BrowserRouter>
+      <div className="app-layout">
+        {!sidebarOpen && (
+          <button
+            className="hamburger"
+            onClick={() => setSidebarOpen(true)}
+            aria-label="Open Sidebar"
+          >
+            <span />
+            <span />
+            <span />
+          </button>
+        )}
 
-          {sidebarOpen && (
-            <Sidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
-          )}
+        {sidebarOpen && (
+          <Sidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
+        )}
 
-          {/* <HeroSection /> */}
+       
 
-          <Routes>
-            {routeMap.map(({ path, component: Component }, index) => (
-              <Route key={index} path={path} element={<Component />} />
-            ))}
-          </Routes>
-        </div>
-      </BrowserRouter>
-    </QueryClientProvider>
+        <Routes>
+          {routeMap.map(({ path, component: Component }, index) => (
+            <Route key={index} path={path} element={<Component />} />
+          ))}
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
-
-export default App;
