@@ -1,38 +1,38 @@
-import React from "react";
-import "./HeroSection.css";
+import React from 'react';
+import './HeroSection.css';
+import heroBg from '../assets/hero-bg.jpg'; // Main background
+import secondaryImage from '../assets/secondary-image.jpg'; // Optional image
 
-const HeroSection: React.FC = () => (
-  <section className="hero-section">
-    <div className="hero-badge">✨ New Collection Available</div>
-    <h1>
-      Discover Your <span className="highlight">Perfect Style</span>
-    </h1>
-    <p>
-      Explore our curated collection of premium fashion pieces designed to make you stand out with confidence and elegance.
-    </p>
-    <div className="hero-buttons">
-      <button className="shop-btn">Shop Collection →</button>
-      <button className="lookbook-btn">View Lookbook</button>
-    </div>
-    <div className="hero-stats">
-      <div>
-        <span className="stat-number">10K+</span>
-        <span className="stat-label">Happy Customers</span>
+const HeroSection = () => {
+  return (
+    <section className="hero-section">
+      {/* Background image - consider CSS background-image instead */}
+      <div 
+        className="hero-bg" 
+        style={{ backgroundImage: `url(${heroBg})` }}
+        role="img"
+        aria-label="Fashion showcase background"
+      ></div>
+      
+      {/* Content */}
+      <span className="hero-badge">New Collection 2024</span>
+      <h1>Discover <span className="highlight">Unique</span> Styles</h1>
+      <p>Shop the latest trends in fashion and lifestyle</p>
+      
+      <div className="hero-buttons">
+        <button className="shop-btn">Shop Now</button>
+        <button className="lookbook-btn">View Lookbook</button>
       </div>
-      <div>
-        <span className="stat-number">500+</span>
-        <span className="stat-label">Premium Items</span>
-      </div>
-      <div>
-        <span className="stat-number">50+</span>
-        <span className="stat-label">Top Brands</span>
-      </div>
-      <div>
-        <span className="stat-number">24/7</span>
-        <span className="stat-label">Support</span>
-      </div>
-    </div>
-  </section>
-);
+
+      {/* Optional lazy-loaded image */}
+      <img
+        src={secondaryImage}
+        alt="Featured product"
+        loading="lazy"
+        className="hero-featured-image"
+      />
+    </section>
+  );
+};
 
 export default HeroSection;
