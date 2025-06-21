@@ -1,10 +1,12 @@
+import React, { useState, lazy, Suspense } from "react";
 import React, { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 import HeroSection from "./components/HeroSection";
 import "./App.css";
 
+// Lazy load the Error page
+const Error = lazy(() => import("./pages/Error"));
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import ForgotPassword from "./pages/ForgotPassword";
@@ -82,6 +84,33 @@ function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
+    <div className="app-layout">
+      {/* Hamburger icon */}
+      {!sidebarOpen && (
+        <button
+          className="hamburger"
+          onClick={() => setSidebarOpen(true)}
+          aria-label="Open Sidebar"
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+      )}
+      {/* Sidebar */}
+      <Sidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
+      
+      {/* Routes */}
+      <Suspense fallback={<div className="loading">Loading...</div>}>
+        <Routes>
+          <Route path="/" element={<HeroSection />} />
+          <Route path="/404" element={<Error />} />
+          <Route path="*" element={<Navigate to="/404" replace />} />
+        </Routes>
+      </Suspense>
+    </div>
+  );
+}
     <BrowserRouter>
       <div className="app-layout">
         {!sidebarOpen && (
@@ -99,9 +128,6 @@ function App() {
         {sidebarOpen && (
           <Sidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
         )}
-
-       
-
         <Routes>
           {routeMap.map(({ path, component: Component }, index) => (
             <Route key={index} path={path} element={<Component />} />
