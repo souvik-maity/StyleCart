@@ -48,9 +48,17 @@ const routeMap: AppRoute[] = [
 
   { path: "/dashboard", component: Dashboard, allowedRoles: ["user", "admin"] },
   { path: "/wishlist", component: Wishlist, allowedRoles: ["user", "admin"] },
-  { path: "/profile/edit", component: EditProfile, allowedRoles: ["user", "admin"] },
+  {
+    path: "/profile/edit",
+    component: EditProfile,
+    allowedRoles: ["user", "admin"],
+  },
   { path: "/orders", component: Orders, allowedRoles: ["user", "admin"] },
-  { path: "/notifications", component: Notifications, allowedRoles: ["user", "admin"] },
+  {
+    path: "/notifications",
+    component: Notifications,
+    allowedRoles: ["user", "admin"],
+  },
 
   { path: "/", component: Home, allowedRoles: [] },
   { path: "/products", component: Products, allowedRoles: [] },
@@ -64,8 +72,16 @@ const routeMap: AppRoute[] = [
   { path: "/thank-you", component: ThankYou, allowedRoles: ["user", "admin"] },
 
   { path: "/admin", component: AdminDashboard, allowedRoles: ["admin"] },
-  { path: "/admin/products", component: ProductManagement, allowedRoles: ["admin"] },
-  { path: "/admin/orders", component: OrderManagement, allowedRoles: ["admin"] },
+  {
+    path: "/admin/products",
+    component: ProductManagement,
+    allowedRoles: ["admin"],
+  },
+  {
+    path: "/admin/orders",
+    component: OrderManagement,
+    allowedRoles: ["admin"],
+  },
   { path: "/admin/users", component: UserManagement, allowedRoles: ["admin"] },
   { path: "/admin/reports", component: Reports, allowedRoles: ["admin"] },
 
@@ -78,7 +94,7 @@ const routeMap: AppRoute[] = [
   { path: "*", component: NotFound, allowedRoles: [] },
 ];
 
-function App() {
+export default function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
@@ -99,8 +115,6 @@ function App() {
         {sidebarOpen && (
           <Sidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
         )}
-
-       
 
         <Routes>
           {routeMap.map(({ path, component: Component }, index) => (
