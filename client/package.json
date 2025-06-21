@@ -10,7 +10,6 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "@tanstack/react-query": "^5.80.10",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.6.2",
