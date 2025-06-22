@@ -2,8 +2,8 @@ import React, { useState, lazy, Suspense } from "react";
 import React, { useState } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
-import HeroSection from "./components/HeroSection";
 import "./App.css";
+import { routeMap } from "./routes";
 
 // Lazy load the Error page
 const Error = lazy(() => import("./pages/Error"));
@@ -81,6 +81,7 @@ const routeMap: AppRoute[] = [
 ];
 
 function App() {
+export default function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
