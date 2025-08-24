@@ -2,6 +2,11 @@ import express, { Request, Response, NextFunction } from "express";
 import cors from "cors";
 import { HTTPMethods, HTTPStatusCodes } from "./constants/constants";
 import { SecretKeys } from "./constants/environment";
+import userRoutes from './routes/user';
+import productRoutes from './routes/product';
+import cartRoutes from './routes/cart';
+import adminRoutes from './routes/admin';
+import supportRoutes from './routes/support';
 
 const app = express();
 const PORT = SecretKeys.PORT;
@@ -24,17 +29,25 @@ app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// Route mounting with API prefix
+app.use('/api/users', userRoutes);
+app.use('/api/products', productRoutes);
+app.use('/api/cart', cartRoutes);
+app.use('/api/admin', adminRoutes);
+app.use('/api/support', supportRoutes);
+
 // Basic route
-app.get("/", (req, res) => {
+app.get("/", (req: Request, res: Response) => {
   res.json({
     message: "StyleCart Server is running!",
     port: PORT,
     timestamp: new Date().toISOString(),
+    apiEndpoint: "/api"
   });
 });
 
 // Health check endpoint
-app.get("/health", (req, res) => {
+app.get("/health", (req: Request, res: Response) => {
   res.status(HTTPStatusCodes.OK).json({
     status: "OK",
     message: "Server is healthy",
@@ -43,10 +56,11 @@ app.get("/health", (req, res) => {
 });
 
 // 404 handler
-app.use("*", (req, res) => {
+app.use("*", (req: Request, res: Response) => {
   res.status(HTTPStatusCodes.NOT_FOUND).json({
     error: "Route not found",
     message: `The route ${req.originalUrl} does not exist on this server`,
+    availableEndpoints: ["/api", "/health"]
   });
 });
 
